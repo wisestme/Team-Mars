@@ -36,6 +36,9 @@ svg {
 	height: 20px;
 }
 /* specifics */
+body {
+	background: #eee;
+}
 header .wrapper {
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -176,6 +179,12 @@ main .wrapper {
 	width: 98%;
 	padding: 0 4em 0 2em;
 	margin: 2em auto;
+}
+
+.nav-fixed nav {
+	position: relative;
+	right: -13em;
+	
 }
 
 .nav-fixed ul {
@@ -339,7 +348,7 @@ main .wrapper {
 
 .nav-fixed nav {
 	position: relative;
-	left: 2em;
+	left: 3em;
 	width: 65%;
 }
 
@@ -391,8 +400,11 @@ main .wrapper {
  }
 
 	.nav-fixed {
+		position: fixed;
+		top: 10px;
 		justify-content: space-around;
 		padding: 0;
+		z-index: 2;
 	}
 
 	.nav-fixed .logo {
@@ -400,10 +412,28 @@ main .wrapper {
 	}
 	
 	.people-text {
-		width: 40%;
+		position: sticky;
+		top: 150px;
+		width: 50%;
 		text-align: center;
 		margin: 0 auto 4em;
+		z-index: -1;
 	}
+
+	.people-image {
+		z-index: 2;
+		background: #fff;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+		border-radius: 8px;
+	}
+
+	.people-text quote {
+		font-family: MetaSerifPro, sans-serif;
+    	text-align: center;
+    	font-size: 32px;
+    	line-height: 35px;
+    	color: #505050;
+}
 
 	.section-two h2 {
 		text-align: center;
