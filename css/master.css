@@ -339,6 +339,10 @@ main .wrapper {
 		padding: 0;
 	}
 
+	.people-text quote {
+	font-size: 30px;
+	line-height: 35px;
+}
 	.section-two h2 {
 		font-size: 36px;
 		line-height: 45px;
