@@ -464,7 +464,12 @@ main .wrapper {
 	}
 
 	.section-two h2 {
-		text-align: center;
+		margin-bottom: 1em;
+		font-family: Proxima Nova;
+font-size: 22px;
+line-height: 27px;
+
+color: #555555;
 	}
 
 	.section-two > * {
