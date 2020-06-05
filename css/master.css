@@ -22,7 +22,8 @@
 	display: grid;
 }
 
-.flex {
+.flex,
+.flex-large {
 	display: flex
 }
 
@@ -381,6 +382,10 @@ main .wrapper {
 		display: block;
 	}
 
+	.flex-large {
+		display: block;
+	}
+
 	.nav-scroll nav {
  	left: -2em;
  }
@@ -398,5 +403,15 @@ main .wrapper {
 		width: 40%;
 		text-align: center;
 		margin: 0 auto 4em;
+	}
+
+	.section-two h2 {
+		text-align: center;
+		border:2px solid red;
+	}
+
+	.section-two > * {
+		width: 90%;
+		margin: 0 auto;
 	}
 }
