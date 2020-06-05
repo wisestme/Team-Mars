@@ -494,3 +494,40 @@ color: #555555;
 		background: #fff;
 	}
 }
+
+/* Modal */
+#modal {
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	/*left: -100vw;*/
+	z-index: 3;
+	transition: 0.5s ease;
+}
+#modal svg {
+	fill: #FA6866;
+	width: 20px;
+	height: 20px;
+	float: right;
+	position: relative;
+	top: -2em;
+	right: -2em;
+}
+
+#modal .wrapper {
+	width: 55%;
+	background: #000;
+	color: #fff;
+	padding: 3em;
+}
+#modal nav {
+	margin-top: 2em;
+}
+#modal li {
+	display: block;
+	list-style: none;
+	font-size: 1em;
+	margin: 1.5em 0;
+}
