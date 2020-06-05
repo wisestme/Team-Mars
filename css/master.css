@@ -17,6 +17,7 @@
 }
 
 /* Generals */
+.grid,
 .grid-large {
 	display: grid;
 }
@@ -54,7 +55,7 @@ header .nav-scroll div {
 	display: inline;
 }
 
- nav {
+ .nav-scroll nav {
  	margin-left: 4em;
  	padding-left: 2em;
  	position: relative;
@@ -293,6 +294,9 @@ main .wrapper {
 /* Minor */
 
 @media screen and (max-width: 1200px) {
+	.nav-scroll nav {
+ 	left: 5em;
+ }
 	.people-text {
 		width: 95%;
 		left: 2em;
@@ -304,6 +308,9 @@ main .wrapper {
 }
 
 @media screen and (max-width: 1050px) {
+	.nav-scroll nav {
+ 	left: 2em;
+ }
 .people-text {
 		width: 95%;
 		left: 2em;
@@ -341,6 +348,9 @@ main .wrapper {
 }
 
 @media screen and (max-width: 945px) {
+	.nav-scroll nav {
+ 	left: 0;
+ }
 	.nav-fixed nav {
 		margin: 0;
 		padding: 0;
@@ -370,6 +380,10 @@ main .wrapper {
 	.grid-large {
 		display: block;
 	}
+
+	.nav-scroll nav {
+ 	left: -2em;
+ }
 
 	.nav-fixed {
 		justify-content: space-around;
