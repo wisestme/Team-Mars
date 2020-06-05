@@ -502,7 +502,7 @@ color: #555555;
 	background: rgba(0, 0, 0, 0.5);
 	position: fixed;
 	top: 0;
-	/*left: -100vw;*/
+	left: -100vw;
 	z-index: 3;
 	transition: 0.5s ease;
 }
