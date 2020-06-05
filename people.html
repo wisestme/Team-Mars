@@ -10,10 +10,13 @@
 	<section>
 		<div class="wrapper">
 			<div class="nav-fixed flex">
+				<div class="people-menu small-only">
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+				</div>
 				<div class="logo">
 					<img src="images/logo-text.png" alt="">
 				</div>
-				<nav>
+				<nav class="large-only">
 					<ul>
 						<li><a href="">Company</a></li>
 						<li><a href="">People</a></li>
@@ -22,21 +25,27 @@
 						</li>
 					</ul>
 				</nav>
-				<div class="people-send">
+				<div class="people-send large-only">
 					<a href="#">Send app to your phone</a>
+				</div>
+				<div class="people-question small-only">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"/></svg>
 				</div>
 			</div>
 		</div>
 	</section>
 	<section class="header">
-		<div class="wrapper grid">
+		<div class="wrapper grid-large">
 			<div class="people-text">
 				<h2>The People Behind the Bunny</h2>
-				<quote>“Hopper is a culture of makers. We build things.”</quote>
-				<p>Joost Ouwerkerk, CTO</p>
+				<quote class="large-only">“Hopper is a culture of makers. We build things.”</quote>
+				<quote class="small-only">“We don't want to optimize; we want to change the world.”</quote>
+				<p class="large-only">Joost Ouwerkerk, CTO</p>
+				<p class="small-only">Maggie, Product Designer</p>
 			</div>
 			<div class="people-image">
-				<img src="images/header-images_3x.png" alt="">
+				<img class="large-only" src="images/header-images_3x.png" alt="">
+				<img class="small-only" src="images/Header-image-small.png" alt="">
 			</div>
 		</div>
 	</section>

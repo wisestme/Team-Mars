@@ -17,7 +17,7 @@
 }
 
 /* Generals */
-.grid {
+.grid-large {
 	display: grid;
 }
 
@@ -25,7 +25,14 @@
 	display: flex
 }
 
+.small-only {
+	display: none;
+}
 
+svg {
+	width: 20px;
+	height: 20px;
+}
 /* specifics */
 header .wrapper {
 	grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -348,4 +355,34 @@ main .wrapper {
 		line-height: 45px;
 	}
 }
+}
+
+/* Major */
+@media screen and (max-width: 870px) {
+	.large-only {
+		display: none;
+	}
+
+	.small-only {
+		display: block;
+	}
+
+	.grid-large {
+		display: block;
+	}
+
+	.nav-fixed {
+		justify-content: space-around;
+		padding: 0;
+	}
+
+	.nav-fixed .logo {
+		margin: 0 4em;
+	}
+	
+	.people-text {
+		width: 40%;
+		text-align: center;
+		margin: 0 auto 4em;
+	}
 }
