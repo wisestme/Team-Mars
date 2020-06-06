@@ -538,6 +538,7 @@ color: #555555;
     width: 100%;
     overflow: hidden;
     position: relative;
+    grid-template-columns: 1fr 1fr 1fr
 }
 
 video {
@@ -552,4 +553,50 @@ video {
 
 .video-text {
 	z-index: 4;
+	grid-column: 1/2;
+	justify-self: end;
+	width: 85%;
+	align-self: center;
+	position: relative;
+	left: 4em;
+	color: #fff;
+}
+
+.video-text h2 {
+	font-family: proximaNova;
+	font-size: 60px;
+	line-height: 60px;
+	margin-bottom: 0.2em;
+}
+
+.video-text p {
+	font-family: proximaNova;
+	font-size: 18px;
+	line-height: 22px;
+	margin-bottom: 1em;
+}
+
+.video-text button {
+	background: transparent;
+	border: transparent;
+	text-decoration: underline;
+	color: #fff;
+	font-family: proximaNova;
+	font-size: 16px;
+	line-height: 23px;
+}
+
+.video-text svg {
+	width: 16px;
+	height: 16px;
+	fill: #fff;
+	margin-left: 0.5em;
+}
+
+.play-video {
+	align-items: center;
+}
+.play-video:hover,
+.play-video button:hover {
+	cursor: pointer;
 }
