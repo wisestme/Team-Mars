@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+
+}
+
+body {
+ 
+  font-family: "Proxima Nova;";
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.jobs-header {
+	background-color: #FFFFFF;
+	height: 301px;
+	width: 100%;
+}
+
+.header-left h2 {
+	position: absolute;
+	height: 42px;
+	left: 10.42%;
+	top: 143px;
+
+	font-family: Quicksand;
+	font-size: 42px;
+	line-height: 49px;
+	align-items: center;
+	color: #505050;
+}
+
+.header-left h3 {
+	position: absolute;
+	left: 10.42%;
+	right: 56.25%;
+	top: 210px;
+	bottom: 76.68%;
+
+	font-family: Quicksand;
+	font-size: 24px;
+	line-height: 32px;
+	color: #878787;
+	font-weight: normal;
+}
+
+.application-section {
+	background-color: #F9F9F9;
+	height: 930px;
+}
+
+.application-section h3 {
+	font-family: Quicksand;
+	font-size: 19px;
+	padding-left: 136px;
+	padding-top: 45px;
+	color: dimgrey;
+	width: 100%;
+
+}
+
+form {
+	margin-left: 138px;
+	padding-top: 60px;
+	width: 52.9%;
+	border-bottom: 1px solid gainsboro;
+	padding-bottom: 55px;
+	
+}
+
+.text {
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	color: dimgray;
+}
+
+.red {
+	color: red;
+}
+
+.resume {
+	background-color: #ebebe0;
+	left: 370px;
+	padding: 10px 30px;
+	font-family: Quicksand;
+	font-weight: bold;
+	font-size: 13px;
+	color: gray;
+	position: absolute;
+	border-radius:3px;
+}
+
+.attach-file i {
+	padding-right: 8px;
+}
+
+.resume:hover {
+	cursor: pointer;
+	background-color: gainsboro;
+}
+
+.margin {
+	margin-top: 49px;
+}
+
+.position {
+	position: absolute;
+	left: 370px;
+
+}
+
+.profile-text {
+	position: absolute;
+	left: 630px;
+	font-family: Quicksand;
+	color: gray;
+	font-size: 11px;
+	margin-top: 3px;
+	font-weight: bold;
+}
+
+.linkedin-btn {
+	padding: 9px 34px;
+	font-family: Quicksand;
+	font-weight: bold;
+	font-size: 14px;
+	color: gray;
+	background-color: #ebebe0;
+	border: none;
+	border-radius: 3px;
+}
+
+
+.linkedin-btn:hover {
+	cursor: pointer;
+	background-color: gainsboro;
+}
+
+.fa-linkedin {
+	color : #0e76a8;
+	background-color: white;
+	margin-right: 15px;
+}
+
+.input-box {
+	padding: 10px 155px;
+	border: 1px solid gainsboro;
+	border-radius: 4px;
+}
+
+.submit-btn {
+	background-color: #01AAE4;
+	padding: 10px 0px;
+	border-radius: 8px;
+	margin-left: 234px;
+	margin-top: 70px;
+	border: none;
+	color: white;
+	font-family: Quicksand;
+	font-size: 14px;
+	width: 481px;
+	font-style: bold;
+
+}
+
+.submit-btn:hover {
+	cursor: pointer;
+	background-color: #0066ff 
+}
+
+.submit-btn:active {
+	border: none;
+}
