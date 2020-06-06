@@ -600,3 +600,31 @@ video {
 .play-video button:hover {
 	cursor: pointer;
 }
+
+#values {
+	width: 80%;
+	margin: 8em auto;
+}
+.values-list {
+	width: 50%;
+}
+
+#values h2 {
+	width: 50%;
+	font-family: proximaNova;
+	font-size: 42px;
+	line-height: 49px;
+}
+
+.value-item p{
+	font-family: proximaNova;
+	font-size: 18px;
+	line-height: 22px;
+	color: #878787;
+	margin-bottom: 2em;
+}
+
+.value-item span {
+	font-weight: bold;
+	color: #000;
+}
