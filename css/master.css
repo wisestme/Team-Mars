@@ -531,3 +531,25 @@ color: #555555;
 	font-size: 1em;
 	margin: 1.5em 0;
 }
+
+/* From Life at Hopper Section */
+.video-container {
+    height: 630px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+}
+
+.video-text {
+	z-index: 4;
+}
