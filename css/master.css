@@ -409,7 +409,7 @@ main .wrapper {
 		position: fixed;
 		top: 0;
 		left: 0;
-		z-index: 2;
+		z-index: 3;
 	}
 
 	.large-only {
@@ -437,7 +437,7 @@ main .wrapper {
 		top: 10px;
 		justify-content: space-around;
 		padding: 0;
-		z-index: 2;
+		z-index: 3;
 		background: #f6f6f6;
 	}
 
@@ -516,7 +516,7 @@ color: #555555;
 	position: fixed;
 	top: 0;
 	left: -100vw;
-	z-index: 3;
+	z-index: 4;
 	transition: 0.5s ease;
 }
 #modal svg {
@@ -561,11 +561,11 @@ video {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  z-index: -1;
+  z-index: 0;
 }
 
 .video-text {
-	z-index: 4;
+	z-index: 2;
 	grid-column: 1/2;
 	justify-self: end;
 	width: 85%;
