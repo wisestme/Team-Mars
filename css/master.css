@@ -260,6 +260,7 @@ main .wrapper {
 	line-height: 22px;
 	color: #000;
 	margin-top: 1em;
+	font-weight: bold;
 }
 
 .people-image {
