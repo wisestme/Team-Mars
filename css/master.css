@@ -546,6 +546,14 @@ color: #555555;
 }
 
 /* From Life at Hopper Section */
+
+#life,
+#values {
+		position: relative;
+		top: -16em;
+		padding-top: 6em;
+		background: #fff;
+	}
 .video-container {
     height: 630px;
     width: 100%;
@@ -614,7 +622,7 @@ video {
 	cursor: pointer;
 }
 
-#values {
+#values .wrapper {
 	width: 80%;
 	margin: 8em auto;
 }
