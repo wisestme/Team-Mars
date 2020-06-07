@@ -208,6 +208,12 @@ main .wrapper {
 	margin-left: 4px;
 }
 
+.nav-fixed nav,
+#modal nav {
+	text-transform: uppercase;
+}
+
+
 .people-send a {
 	border: 1px solid #01aae4;
 	border-radius: 8px;
