@@ -711,9 +711,38 @@ video {
 }
 .humans-image img {
 	width: 60%;
-	
 }
 
+.humans-quote {
+	background-image: url(../images/faces.png);
+	margin: 6em auto;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 400px;
+}
+
+.humans-quote quote {
+	display: block;
+	width: 40%;
+	text-align: center;
+	margin: 0 auto;
+	font-family: MetaSerifPro;
+	font-size: 36px;
+	line-height: 36px;
+	text-align: center;
+	color: #000000;
+	font-style: italic;
+}
+
+.humans-quote p {
+	font-size: 64px;
+	line-height: 64px;
+	text-align: center;
+	position: relative;
+	color: #FA6866;
+}
 /* Extras Section */
 #extras > .wrapper > div {
 	width: 39%;
