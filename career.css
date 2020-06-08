@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+body{
+    display: flex;
+    position: relative;
+    font-family: 'Proxima Nova',Raleway;
+}
+.details{
+    width: 900px;
+    height: 2782px;
+    background-color: #229EC5;
+    position: sticky;
+
+}
+.logo{
+position: absolute; 
+width: 38.25px;
+height: 30px;
+left: 150px;
+top: 64px;
+
+
+
+}
+.about{
+   
+    margin-left: 150px;
+    margin-top:180px;
+    font-family: 'Meta Serif Pro';
+    font-size: 30px;
+    line-height: 34px;
+    color: #FFFFFF;
+    width: 380px;
+}
+
+.life{
+    width:692px;
+    height: 2410px;
+    left: 748px;
+    margin-top: 449px;
+    background-color: #FAFAFA;
+}
+.lorem{
+ margin-left: 150px;
+ font-size:16px;
+ line-height: 22px;
+ color: #FFFFFF;
+ padding-top: 15px;
+ width: 488px;
+}
+p .lorem{
+    margin-top:0px;
+}
+hr{
+    height: 1px;
+}
+.life{
+    
+    color: #505050;
+    line-height: 22px;
+    
+    font-size: 18px;
+    align-items: center;
+}
+.learn{
+    
+    margin-left: 148px;
+    padding-top: 30px;
+
+}
+#mission{
+    font-size: 14px;
+    line-height: 19px;
+    width:300px;
+}
