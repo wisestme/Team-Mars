@@ -677,9 +677,46 @@ video {
 	fill: red;
 }
 
+/* Humans Section */
+.humans-upper {
+	justify-content: space-around;
+	align-items: center;
+	padding: 2em;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.humans-upper > div {
+	width: 50%;
+	padding: 1em;
+}
+
+.humans-text h2 {
+	font-family: proximaNova;
+	font-size: 42px;
+	line-height: 49px;
+	color: #000000;
+	margin-bottom: 0.2em;
+}
+
+.humans-text p {
+	font-family: Proxima Nova;
+	font-size: 24px;
+	line-height: 32px;
+	color: #878787;
+}
+
+.humans-image {
+	text-align: center;
+}
+.humans-image img {
+	width: 60%;
+	
+}
+
 /* Extras Section */
 #extras > .wrapper > div {
-	width: 40%;
+	width: 39%;
 }
 
 #extras > .wrapper {
