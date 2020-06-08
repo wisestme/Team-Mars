@@ -512,6 +512,14 @@ color: #555555;
 		padding-top: 6em;
 		background: #fff;
 	}
+
+	#life,
+#values {
+		position: relative;
+		top: -16em;
+		padding-top: 6em;
+		background: #fff;
+	}
 }
 
 /* Modal */
@@ -553,13 +561,7 @@ color: #555555;
 
 /* From Life at Hopper Section */
 
-#life,
-#values {
-		position: relative;
-		top: -16em;
-		padding-top: 6em;
-		background: #fff;
-	}
+
 .video-container {
     height: 630px;
     width: 100%;
