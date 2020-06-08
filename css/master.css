@@ -514,11 +514,16 @@ color: #555555;
 	}
 
 	#life,
-#values {
+#values,
+#offices {
 		position: relative;
 		top: -16em;
 		padding-top: 6em;
 		background: #fff;
+	}
+
+	#offices {
+		top: -24em;
 	}
 }
 
@@ -665,4 +670,112 @@ video {
 	border: 2px solid red;
 }
 
-.slide-item 
+.slider-control svg {
+	width: 100px;
+	height: 10px;
+	color: red;
+	fill: red;
+}
+
+/* Extras Section */
+#extras > .wrapper > div {
+	width: 40%;
+}
+
+#extras > .wrapper {
+	justify-content: space-around;
+}
+
+.extras-text h2 {
+	font-family: proximaNova;
+	font-size: 42px;
+	line-height: 49px;
+	margin-bottom: 0.2em;
+}
+
+.extras-text p {
+	font-family: proximaNova;
+	font-size: 24px;
+	line-height: 32px;
+	color:#878787;
+}
+
+.activities {
+	border: 1px solid #e5e5e5;
+	box-shadow: 0 4px 4px #e5e5e5;
+	border-radius: 0.5em;
+}
+.activities-header {
+	box-shadow: 0 -4px 4px #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	border-radius: 0.5em;
+	padding: 0.4em 2em;
+}
+
+.activities-header h2 {
+	font-family: proximaNova;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.activities-header li {
+	list-style: none;
+	display: inline;
+	margin-right: 0.5em;
+	font-family: proximaNova;
+	font-size: 16px;
+	line-height: 22px;
+	color: #878787;
+}
+
+.activities-header svg {
+	width: 15px;
+	height: 15px;
+	fill: #878787;
+	margin-right: 0.5em;
+}
+
+.activities-header li:nth-child(n + 2) {
+	border-left: 1px solid #878787;
+	padding-left: 1em;
+}
+
+.activities-header sup {
+	font-size: 10px;
+}
+
+.member {
+	display: flex;
+	align-items: center;
+}
+
+.member img {
+	margin: 0.6em;
+}
+
+.name p {
+	display: inline;
+	font-family: Proxima Nova;
+	font-size: 13px;
+	line-height: 15px;
+	color: #555555;
+}
+
+.name time {
+	font-family: Proxima Nova;
+	font-size: 10px;
+	line-height: 13px;
+	color: #aeaeae;
+	margin-left: 1em;
+}
+
+.interactions {
+	padding: 1em;
+}
+
+.message {
+	font-family: Proxima Nova;
+	font-size: 12px;
+	line-height: 16px;
+	color: rgba(85, 85, 85, 0.9);
+}
