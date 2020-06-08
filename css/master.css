@@ -730,7 +730,7 @@ video {
 
 .activities-header svg {
 	width: 15px;
-	height: 15px;
+	height: 13px;
 	fill: #878787;
 	margin-right: 0.5em;
 }
@@ -778,4 +778,8 @@ video {
 	font-size: 12px;
 	line-height: 16px;
 	color: rgba(85, 85, 85, 0.9);
+}
+
+#extras {
+	margin-bottom: 2em;
 }
