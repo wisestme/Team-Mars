@@ -655,3 +655,12 @@ video {
 	font-weight: bold;
 	color: #000;
 }
+
+.slides {
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+	border: 2px solid red;
+}
+
+.slide-item 

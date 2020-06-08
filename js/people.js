@@ -9,3 +9,14 @@ menuIcon.addEventListener('click', function(){
 closeIcon.addEventListener('click', function(){
 	modal.style.left = '-100vw';
 });
+
+// First Slider
+$('.slides')
+	.not('slick-initialized')
+	.slick({
+	autoplay: true,
+	autoplaySpeed: 3000,
+	dots: true,
+	prevArrow: ".prev",
+	nextArrow: ".next"
+});
