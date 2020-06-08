@@ -449,7 +449,6 @@ main .wrapper {
 
 	.nav-fixed .logo {
 		margin: 0 4em;
-
 	}
 	
 	.people-text {
@@ -663,18 +662,27 @@ video {
 	color: #000;
 }
 
+#offices {
+	position: relative;
+}
+
+.slider-control {
+	position: absolute;
+	right: 8.5em;
+	bottom: -25px;
+}
+
 .slides {
 	text-align: center;
 	width: 80%;
 	margin: 0 auto;
-	border: 2px solid red;
 }
 
 .slider-control svg {
-	width: 100px;
-	height: 10px;
-	color: red;
-	fill: red;
+	width: 40px;
+	height: 20px;
+	border: 1px solid #000000;
+	box-sizing: border-box;
 }
 
 /* Humans Section */
