@@ -208,6 +208,12 @@ main .wrapper {
 	margin-left: 4px;
 }
 
+.nav-fixed nav,
+#modal nav {
+	text-transform: uppercase;
+}
+
+
 .people-send a {
 	border: 1px solid #01aae4;
 	border-radius: 8px;
@@ -260,6 +266,7 @@ main .wrapper {
 	line-height: 22px;
 	color: #000;
 	margin-top: 1em;
+	font-weight: bold;
 }
 
 .people-image {
@@ -398,8 +405,19 @@ main .wrapper {
 		position: fixed;
 		top: 0;
 		left: 0;
-		z-index: -2;
+		z-index: -1;
 	}
+
+	.overlay-top {
+		background: #f6f6f6;
+		width: 100vw;
+		height: 10vh;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 3;
+	}
+
 	.large-only {
 		display: none;
 	}
@@ -425,12 +443,12 @@ main .wrapper {
 		top: 10px;
 		justify-content: space-around;
 		padding: 0;
-		z-index: 2;
+		z-index: 3;
+		background: #f6f6f6;
 	}
 
 	.nav-fixed .logo {
 		margin: 0 4em;
-
 	}
 	
 	.people-text {
@@ -493,6 +511,19 @@ color: #555555;
 		padding-top: 6em;
 		background: #fff;
 	}
+
+	#life,
+#values,
+#offices {
+		position: relative;
+		top: -16em;
+		padding-top: 6em;
+		background: #fff;
+	}
+
+	#offices {
+		top: -24em;
+	}
 }
 
 /* Modal */
@@ -503,7 +534,7 @@ color: #555555;
 	position: fixed;
 	top: 0;
 	left: -100vw;
-	z-index: 3;
+	z-index: 4;
 	transition: 0.5s ease;
 }
 #modal svg {
@@ -530,4 +561,297 @@ color: #555555;
 	list-style: none;
 	font-size: 1em;
 	margin: 1.5em 0;
+}
+
+/* From Life at Hopper Section */
+
+
+.video-container {
+    height: 630px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr
+}
+
+video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 0;
+}
+
+.video-text {
+	z-index: 2;
+	grid-column: 1/2;
+	justify-self: end;
+	width: 85%;
+	align-self: center;
+	position: relative;
+	left: 4em;
+	color: #fff;
+}
+
+.video-text h2 {
+	font-family: proximaNova;
+	font-size: 60px;
+	line-height: 60px;
+	margin-bottom: 0.2em;
+}
+
+.video-text p {
+	font-family: proximaNova;
+	font-size: 18px;
+	line-height: 22px;
+	margin-bottom: 1em;
+}
+
+.video-text button {
+	background: transparent;
+	border: transparent;
+	text-decoration: underline;
+	color: #fff;
+	font-family: proximaNova;
+	font-size: 16px;
+	line-height: 23px;
+}
+
+.video-text svg {
+	width: 16px;
+	height: 16px;
+	fill: #fff;
+	margin-left: 0.5em;
+}
+
+.play-video {
+	align-items: center;
+}
+.play-video:hover,
+.play-video button:hover {
+	cursor: pointer;
+}
+
+#values .wrapper {
+	width: 80%;
+	margin: 8em auto;
+}
+.values-list {
+	width: 50%;
+}
+
+#values h2 {
+	width: 50%;
+	font-family: proximaNova;
+	font-size: 42px;
+	line-height: 49px;
+}
+
+.value-item p{
+	font-family: proximaNova;
+	font-size: 18px;
+	line-height: 22px;
+	color: #878787;
+	margin-bottom: 2em;
+}
+
+.value-item span {
+	font-weight: bold;
+	color: #000;
+}
+
+#offices {
+	position: relative;
+}
+
+.slider-control {
+	position: absolute;
+	right: 8.5em;
+	bottom: -25px;
+}
+
+.slides {
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.slider-control svg {
+	width: 40px;
+	height: 20px;
+}
+
+/* Humans Section */
+.humans-upper {
+	justify-content: space-around;
+	align-items: center;
+	padding: 2em;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.humans-upper > div {
+	width: 50%;
+	padding: 1em;
+}
+
+.humans-text h2 {
+	font-family: proximaNova;
+	font-size: 42px;
+	line-height: 49px;
+	color: #000000;
+	margin-bottom: 0.2em;
+}
+
+.humans-text p {
+	font-family: Proxima Nova;
+	font-size: 24px;
+	line-height: 32px;
+	color: #878787;
+}
+
+.humans-image {
+	text-align: center;
+}
+.humans-image img {
+	width: 60%;
+}
+
+.humans-quote {
+	background-image: url(../images/faces.png);
+	margin: 6em auto;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 400px;
+}
+
+.humans-quote quote {
+	display: block;
+	width: 40%;
+	text-align: center;
+	margin: 0 auto;
+	font-family: MetaSerifPro;
+	font-size: 36px;
+	line-height: 36px;
+	text-align: center;
+	color: #000000;
+	font-style: italic;
+}
+
+.humans-quote p {
+	font-size: 64px;
+	line-height: 64px;
+	text-align: center;
+	position: relative;
+	color: #FA6866;
+}
+/* Extras Section */
+#extras > .wrapper > div {
+	width: 39%;
+}
+
+#extras > .wrapper {
+	justify-content: space-around;
+}
+
+.extras-text h2 {
+	font-family: proximaNova;
+	font-size: 42px;
+	line-height: 49px;
+	margin-bottom: 0.2em;
+}
+
+.extras-text p {
+	font-family: proximaNova;
+	font-size: 24px;
+	line-height: 32px;
+	color:#878787;
+}
+
+.activities {
+	border: 1px solid #e5e5e5;
+	box-shadow: 0 4px 4px #e5e5e5;
+	border-radius: 0.5em;
+}
+.activities-header {
+	box-shadow: 0 -4px 4px #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	border-radius: 0.5em;
+	padding: 0.4em 2em;
+}
+
+.activities-header h2 {
+	font-family: proximaNova;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.activities-header li {
+	list-style: none;
+	display: inline;
+	margin-right: 0.5em;
+	font-family: proximaNova;
+	font-size: 16px;
+	line-height: 22px;
+	color: #878787;
+}
+
+.activities-header svg {
+	width: 15px;
+	height: 13px;
+	fill: #878787;
+	margin-right: 0.5em;
+}
+
+.activities-header li:nth-child(n + 2) {
+	border-left: 1px solid #878787;
+	padding-left: 1em;
+}
+
+.activities-header sup {
+	font-size: 10px;
+}
+
+.member {
+	display: flex;
+	align-items: center;
+}
+
+.member img {
+	margin: 0.6em;
+}
+
+.name p {
+	display: inline;
+	font-family: Proxima Nova;
+	font-size: 13px;
+	line-height: 15px;
+	color: #555555;
+}
+
+.name time {
+	font-family: Proxima Nova;
+	font-size: 10px;
+	line-height: 13px;
+	color: #aeaeae;
+	margin-left: 1em;
+}
+
+.interactions {
+	padding: 1em;
+}
+
+.message {
+	font-family: Proxima Nova;
+	font-size: 12px;
+	line-height: 16px;
+	color: rgba(85, 85, 85, 0.9);
+}
+
+#extras {
+	margin-bottom: 2em;
 }
