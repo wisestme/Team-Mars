@@ -925,8 +925,36 @@ margin-top: 2em;
 		background: #fff;
 		box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.05);
 		border-radius: 8px;
-		margin-bottom: 0;
+		border: 2px solid red;
 		
+	}
+	
+	#accessible {
+		position: relative;
+		top: -12em;
+		padding: 1em;
+		background: #fff;
+	}
+
+	#accessible .wrapper {
+		width: 80%;
+		margin: auto;
+	}
+
+	#accessible h2 {
+		margin: 2em 0 0.5em 0;
+		font-family: proximaNova;
+		font-size: 22px;
+		line-height: 27px;
+		color: #555555;
+	}
+
+	#accessible p {
+		font-family: proximaNova;
+		font-size: 16px;
+		line-height: 19px;
+		color: #878787;
+		margin-bottom: 1em;
 	}
 
 	.people-image img {
@@ -973,7 +1001,7 @@ margin-top: 2em;
 	#values,
 	#offices {
 		position: relative;
-		top: -16em;
+		top: -12em;
 		padding-top: 6em;
 		background: #fff;
 	}
