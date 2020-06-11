@@ -1085,6 +1085,8 @@ margin-top: 2em;
 		background-image: url(../images/faces.png);
 		background-size: cover;
 		background-position: center;
+		position: relative;
+		bottom: 4em;
 	}
 
 	#humans quote {
@@ -1104,7 +1106,21 @@ margin-top: 2em;
 		line-height: 16px;
 		color: #000000;
 		position: absolute;
-		bottom: 11em;
+		bottom: 6em;
 		left: 4.5em;
+	}
+
+	#extras {
+		border: 2px solid red;
+		position: relative;
+		bottom: 20em;
+		padding-top: 2em;
+		background: #fff;
+	}
+
+	}
+	#extras > .wrapper > div {
+		width: 100%;
+		padding: 1em;
 	}
 }
