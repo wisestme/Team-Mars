@@ -961,6 +961,16 @@ margin-top: 2em;
 		color: #878787;
 		margin-bottom: 1em;
 	}
+	
+	.image-bunnies {
+		width: 90%;
+		margin: auto;
+		justify-content: center;
+		align-items: center;
+	}
+	#accessible img {
+		height: 42px;
+	}
 
 	.people-image img {
 		margin: 0 auto;
