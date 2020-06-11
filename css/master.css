@@ -941,6 +941,11 @@ margin-top: 2em;
 		margin: auto;
 	}
 
+	.accessible-text {
+		width: 90%;
+		margin: auto;
+	}
+
 	#accessible h2 {
 		margin: 2em 0 0.5em 0;
 		font-family: proximaNova;
