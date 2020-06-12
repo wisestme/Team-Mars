@@ -4,7 +4,15 @@
 }
 @font-face{
     font-family: ProximaNova;
-    src: url(fonts/ProximaNova.otf);
+    src: url("fonts/ProximaNova.otf");
+}
+
+.test {
+    border: 2px solid red;
+}
+
+.test2 {
+    border: 2px solid blue;
 }
 
 *{
@@ -19,12 +27,13 @@ body{
     width: 1440px;
     height: 2742px;
     background-color: #FFFFFF;
+    /*overflow-y: hidden;*/
    
 }
 .details{
     background-color: #229EC5;
     
-    width: 748px;
+   width: 748px;
    color: #FFFFFF;
     
 
@@ -154,7 +163,7 @@ a{
     left:51.94%;
     right:0%;
     top:0%;
-    bottom:-14.74%;
+    bottom:-14.74%; /*negative value was used*/
 
 background:#FFFFFF;
 box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
@@ -201,7 +210,7 @@ box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 .life{
     position:absolute;
     width:692px;
-    height: 2410px;
+    height: 50%;
     left: 748px;
     top:499px;
     background:#FAFAFA; 
