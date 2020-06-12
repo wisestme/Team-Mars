@@ -42,7 +42,7 @@
 		</div>
 	</section>
 	<section id="header_section" class="header">
-		<div class="wrapper grid-large">
+		<div class="wrapper grid-large-temp">
 			<div class="people-text">
 				<h2>The People Behind the Bunny</h2>
 				<quote class="large-only">“Hopper is a culture of makers. We build things.”</quote>
@@ -56,7 +56,20 @@
 			</div>
 		</div>
 	</section>
-	<section id="section_two">
+	<section id="accessible" class="small-only">
+		<div class="wrapper">
+			<div class="accessible-text">
+				<h2>Making the world <br> accessible to all</h2>
+				<p>Working at Hopper means making an authentic impact on the way people arrange and enjoy travel. By allowing booking to be simple and affordable, we’re breaking down the barrier to adventure at scale. The speed at which we design, form, and deploy changes create a dream environment for those who thrive on independence.</p>
+				<p>Our approach is one centred around consistent communication, earning users trust. We avoid outdated pressure tactics and opt instead for what we believe is the future of great travel. A tailored solution, that removes anxiety around decision making, ensuring the user always finds the best possible deal, within a process that's playful and effortless.</p>
+			</div>
+			<div class="image-bunnies flex">
+				<img src="images/bunnies1.png" alt="">
+				<img src="images/bunnies2.png" alt="">
+			</div>
+		</div>
+	</section>
+	<section id="section_two" class="large-only">
 		<div class="wrapper">
 			<div class="section-two flex-large">
 				<h2>Making the world <br> accessible to all</h2>
@@ -89,13 +102,19 @@
 	<!-- From Life at Hopper Section -->
 	<section id="life">
 		<div class="wrapper">
-			<div class="video-container grid">
-    			<video muted loop poster="images/video-life.png">
+			<div class="video-container grid-large">
+    			<video class="large-only" muted loop poster="images/video-life.png">
+        			<source src="video/twitter2.mp4" type="video/mp4">
+    			</video>
+    			<video class="small-only" muted loop poster="images/video-life-small.png">
         			<source src="video/twitter2.mp4" type="video/mp4">
     			</video>
     			<div class="video-text">
     				<h2>Life at Hopper</h2>
-    				<p>How did the humans behind the bunny find their careers? From developers to data scientists to designers, we all have the same goal: redefine how the world books travel.</p>
+    				<p class="large-only">How did the humans behind the bunny find their careers? From developers to data scientists to designers, we all have the same goal: redefine how the world books travel.</p>
+    				<p class="small-only">
+    					Learn how the humans behind the bunny found their careers. From Engineers to Designers, Hopper’s mission is the same; help others travel the world.
+    				</p>
 	    			<div class="play-video flex">
 	    				<button>Watch the short film </button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M371.7 238l-176-107c-15.8-8.8-35.7 2.5-35.7 21v208c0 18.4 19.8 29.8 35.7 21l176-101c16.4-9.1 16.4-32.8 0-42zM504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256z"/></svg>
 	    			</div>
@@ -106,10 +125,23 @@
 	</section>
 
 	<section id="values">
-		<div class="wrapper flex">
+		<div class="wrapper flex-large">
 			<h2>Hopper's core values</h2>
-			<div class="values-list">
+			<div class="values-list small-only">
 				<div class="value-item">
+					<p><span>Scale for impact.</span> Our product helps more than 600k merchants worldwide do what they love. There are no small problems at Shopify; every project you touch will have a real impact on merchants’ livelihoods, and that makes our work incredibly fulfilling.</p>
+				</div>
+				<div class="value-item">
+					<p><span>Propelled by ambition.</span> We’re growing quickly and, like a rocket ship, we show no signs of slowing down. We want to define the future of entrepreneurship, be a 100 year company, and the global engine that powers commerce.</p>
+				</div>
+				<div class="value-item">
+					<p><span>Learn with the best.</span> Talented people choose to work with us because we provide everything they need to feel challenged, hone their craft, and learn from one another. Surround yourself with a world-class team and level up quickly.
+
+					</p>
+				</div>
+			</div>
+			<div class="values-list large-only">
+				<div class="value-item ">
 					<p><span>Be curious.</span> Analyze everything. Read everything. Reread everything. Question everything. Never stop learning, whether it’s a skill, a marketplace, the user, the industry, the world. Share knowledge and encourage wondering.</p>
 				</div>
 				<div class="value-item">
@@ -142,7 +174,7 @@
 					<img src="images/office.png" />
 				</div>
 			</div>
-			<div class="slider-control">
+			<div class="slider-control large-only">
 				<span class="arrow-backward prev">
 					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="long-arrow-alt-left" class="svg-inline--fa fa-long-arrow-alt-left fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M134.059 296H436c6.627 0 12-5.373 12-12v-56c0-6.627-5.373-12-12-12H134.059v-46.059c0-21.382-25.851-32.09-40.971-16.971L7.029 239.029c-9.373 9.373-9.373 24.569 0 33.941l86.059 86.059c15.119 15.119 40.971 4.411 40.971-16.971V296z"></path></svg>
 				</span>
@@ -151,12 +183,17 @@
 					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="long-arrow-alt-right" class="svg-inline--fa fa-long-arrow-alt-right fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z"></path></svg>
 				</span>
 			</div>
+			<div class="departments small-only">
+				<h2>Departments</h2>
+				<p>Our departments range across data science, engineering, design, product and customer support, working to drive growth, creativity, and a deep understanding of our customer's needs. Throughout them all, you'll find a consistent mentality and desire for collaboration.
+				</p>
+			</div>
 		</div>
 	</section>
 
 	<section id="humans">
 		<div class="wrapper">
-			<div class="humans-upper flex">
+			<div class="humans-upper flex large-only">
 				<div class="humans-text">
 					<h2>Assorted Hopper Humans</h2>
 					<p>A ukulele-playing developer, an engineer-turned-data scientist, a copywriter-turned-marketer-turned-product manager: at Hopper, backgrounds are diverse and unique, and pathways for growth are limitless. How will your story add to our mix?</p>
@@ -164,8 +201,16 @@
 				<div class="humans-image">
 					<img src="images/multi-bunny.png" alt="">
 				</div>
+
 			</div>
-			<div class="humans-quote">
+			<div class="humans-image small-only">
+				<img src="images/chair-bunny.png" alt="">
+			</div>
+			<div class="quote small-only">
+				<quote>“We don't want to optimize; we want to change the world.”</quote>
+				<p>Maggie, Product Designer</p>
+			</div>
+			<div class="humans-quote large-only">
 				<quote>Building a team of really diverse people who work well together is core of what drives us.</quote>
 				<p>”</p>
 			</div>
@@ -173,10 +218,14 @@
 	</section>
 
 	<section id="extras">
-		<div class="wrapper flex">
-			<div class="extras-text">
+		<div class="wrapper flex-large">
+			<div class="extras-text large-only">
 				<h2>Extra-curriculars</h2>
 				<p>We know that part of being our best selves at work means having fun outside of working hours. Expect board game nights, barbecues, karaoke bars, lunch-and-learns, and company-wide offsites. We like to have fun, what can we say? </p>
+			</div>
+			<div class="extras-text small-only">
+				<h2>Activities</h2>
+				<p>As much as we prefer to have fun, at times workdays can be stressful.  We've got these times covered, organising events, games, BBQs, ping-pong tournaments, karaoke, lunch and learns, dinners and even team trips. We all like to adventure. After all, its what we do best.</p>
 			</div>
 			<div class="activities">
 				<div class="activities-header">
@@ -236,6 +285,21 @@
 			</div>
 		</div>
 	</section>
+	<section id="careers">
+		<div class="wrapper flex">
+			<div class="careers-image large-only">
+				<img src="images/working-bunnies.png" alt="">
+			</div>
+			<div class="careers-text">
+				<h2 class="large-only">So what do you think?</h2>
+				<h2 class="small-only">We're waiting for you</h2>
+				<p class="large-only">We’re a fast-paced and fun-loving team working together to solve big problems. You’d be a great fit! </p>
+				<p class="small-only">As much as we prefer to have fun, at times workdays can be stressful.  We've got these times covered, organising events, games, BBQs, ping-pong tournaments, karaoke, lunch and learns, dinners and even team trips. We all like to adventure. After all, its what we do best.</p>
+				<a>See Open Careers<span class="large-only">21</span></a>
+			</div>
+		</div>
+	</section>
+	<footer>Test</footer>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	
 	<script src="slick/slick.js"></script>
