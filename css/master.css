@@ -681,9 +681,10 @@ color: #FFFFFF;
 border-radius: 8px;
 background: #01AAE4;
 box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
-width: 52%;
-padding: 0.7em 0.5em 0.7em 3em;
+width: 100%;
+padding: 0.7em 5px 0.7em 50px;
 margin-top: 2em;
+max-width: 250px
 }
 
 .careers-text span {
@@ -857,9 +858,7 @@ margin-top: 2em;
 		display: block;
 	}
 
-	/*.grid-large {
-		display: block;
-	}*/
+	
 
 	.flex-large {
 		display: block;
@@ -919,7 +918,8 @@ margin-top: 2em;
 		margin: 0 auto 6em;
 		z-index: -1;
 		background: #f6f6f6;
-		padding: 0 10em;
+		padding: 0 5em;
+		max-width: 600px;
 	}
 
 	.people-image {
@@ -1093,12 +1093,12 @@ margin-top: 2em;
 	#humans quote {
 		display: inline-block;
 		font-family: MetaSerifPro;
-		font-size: 24px;
+		font-size: 26px;
 		line-height: 26px;
 		width: 75%;
 		padding: 4em 2em;
 		color: #505050;		
-		
+		margin-left: 2em;
 	}
 
 	.quote p {
@@ -1108,17 +1108,16 @@ margin-top: 2em;
 		color: #000000;
 		position: absolute;
 		bottom: 6em;
-		left: 4.5em;
+		left: 9em;
 	}
 
 	#extras {
 		position: relative;
 		bottom: 20em;
-		padding-top: 2em;
+		padding: 2em 2em 2em 2em;
 		background: #fff;
 	}
 
-	}
 	#extras > .wrapper > div {
 		width: 100%;
 		padding: 1em;
@@ -1127,22 +1126,56 @@ margin-top: 2em;
 #careers .wrapper {
     width: 90%;
 }
-}
+
 #careers .wrapper > * {
     width: 98%;
-    border: 2px solid red;
+    
+
 }
+
 #careers .careers-text {
     margin-left: 1em;
     font-family: Proxima Nova;
-font-size: 22px;
-line-height: 27px;
-
-color: #555555;
-width: 100%;
+	font-size: 22px;
+	line-height: 27px;
+	color: #555555;
+	width: 100%;
 }
 
 #careers {
-	border: 2px solid red;
+	position: relative;
+	top: -26em;
+	margin-top: 0;
+	background: #fff;
+	padding-bottom: 2em;
 }
+
+	#careers h2 {
+		font-family: proximaNova;
+		font-size: 22px;
+		line-height: 27px;
+		color: #555555;
+	}
+
+	#careers a {
+		font-family: proximaNova;
+font-size: 16px;
+line-height: 23px;
+text-decoration-line: underline;
+color: #01AAE4;
+background: transparent;
+padding: 0;
+box-shadow: none;
+	}
+
+	#careers::after {
+		content: "";
+		width: 100%;
+		height: 100px;
+		background-color: #fff;
+		display: block;
+		position: absolute;
+		top: 380px;
+		border: transparent;
+	}
 }
