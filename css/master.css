@@ -461,6 +461,8 @@ video {
 	margin: 0 auto;
 }
 
+.slides img { width: 100% }
+
 .slider-control svg {
 	width: 40px;
 	height: 20px;
@@ -840,7 +842,17 @@ max-width: 250px
 		z-index: -1;
 	}
 
-	.overlay-top {
+	.nav-fixed::before {
+	content: ".";
+	display: block;
+	width: 100%;
+	height: 5vh;
+	background: #f6f6f6;
+	position: absolute;
+	bottom: 5.5vh;
+}
+
+	/*.overlay-top {
 		background: #f6f6f6;
 		width: 100vw;
 		height: 10vh;
@@ -848,7 +860,7 @@ max-width: 250px
 		top: 0;
 		left: 0;
 		z-index: 3;
-	}
+	}*/
 
 	.large-only {
 		display: none;
@@ -884,11 +896,18 @@ max-width: 250px
 	.video-container {
 		grid-template-columns: 1fr;
 	}
+	
+	video {
+ 
+ 
+ width: 400px;
+ height: 100px;
+  transform: translateX(0);
 
+}
 	.video-container video {
 		position: relative;
-
-
+		left: 0;
 	}
 
 	.video-text h2 {
@@ -897,7 +916,7 @@ max-width: 250px
 	}
 	.video-text {
 		position: relative;
-		top: 1em;
+		top: 4em;
 		color: #878787;
 		margin: auto;
 		left: 0;
@@ -931,7 +950,6 @@ max-width: 250px
 	
 	#accessible {
 		position: relative;
-		top: -12em;
 		padding: 1em;
 		background: #fff;
 	}
@@ -1007,7 +1025,7 @@ max-width: 250px
 
 	#section_two {
 		position: relative;
-		top: -14em;
+		top: 2em;
 		padding-top: 6em;
 		background: #fff;
 	}
@@ -1032,19 +1050,42 @@ max-width: 250px
 	#values,
 	#offices {
 		position: relative;
-		top: -12em;
+		top: 1em;
 		padding-top: 2em;
 		background: #fff;
 	}
 	
+	#accessible,
+	#life {
+		background: #fff;
+
+	}
+
+	#life::before {
+		content: '.';
+		display: block;
+		width: 100%;
+		height: 5vh;
+		position: relative;
+		bottom: 7vh;
+		background: #fff;
+	}
+
+	#accessible::before {
+		content: '.';
+		display: block;
+		width: 100%;
+		height: 28vh;
+		background: #fff;
+		position: relative;
+		bottom: 30vh;
+	}
+	
 	#values {
-		top: -16em;
-		padding-top: 1em; 
 		padding-bottom: 2em;
 	}
 
 	#offices {
-		top: -18em;
 		padding: 2em 0;
 	}
 	
@@ -1071,7 +1112,7 @@ max-width: 250px
 
 	#humans {
 		position: relative;
-		top: -18em;
+		top: 1em;
 		background: #fff;
 		padding-bottom: 4em;
 	}
@@ -1113,7 +1154,6 @@ max-width: 250px
 
 	#extras {
 		position: relative;
-		bottom: 20em;
 		padding: 2em 2em 2em 2em;
 		background: #fff;
 	}
@@ -1129,8 +1169,6 @@ max-width: 250px
 
 #careers .wrapper > * {
     width: 98%;
-    
-
 }
 
 #careers .careers-text {
@@ -1144,10 +1182,18 @@ max-width: 250px
 
 #careers {
 	position: relative;
-	top: -26em;
 	margin-top: 0;
 	background: #fff;
-	padding-bottom: 2em;
+}
+
+#careers::before {
+	content: '.';
+	display: block;
+	width: 100%;
+	height: 15vh;
+	background: #fff;
+	position: relative;
+	bottom: 14vh;
 }
 
 	#careers h2 {
@@ -1168,7 +1214,7 @@ padding: 0;
 box-shadow: none;
 	}
 
-	#careers::after {
+	/*#careers::after {
 		content: "";
 		width: 100%;
 		height: 130px;
@@ -1177,5 +1223,5 @@ box-shadow: none;
 		position: absolute;
 		top: 370px;
 		border: transparent;
-	}
+	}*/
 }
