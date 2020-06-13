@@ -1,81 +1,97 @@
-* {
-  box-sizing: border-box;
-  margin:0;
-  padding: 0;
 
+@font-face {
+	font-family: proximanova;
+	src: url(../fonts/proximanova);
 }
 
 body {
- 
-  font-family: "Proxima Nova;";
-  width: 100%;
+	overflow-x: hidden;
+	width: 100%
 }
 
-a {
-  text-decoration: none;
-}
 
-.jobs-header {
+header .row {
 	background-color: #FFFFFF;
-	height: 301px;
-	width: 100%;
+	
 }
 
-.header-left h2 {
-	position: absolute;
-	height: 42px;
-	left: 10.42%;
-	top: 143px;
+.menu-icon {
+  display: none;
+  
+}
 
+.help-icon {
+	display: none;
+
+}
+
+.hopper-logo {
+ 	margin-top: 50px;
+ 	margin-left: 20px;
+
+}
+
+.bunny-img {
+	margin-top: 38px;
+	margin-left: 40px;
+}
+
+
+header h2 {
 	font-family: Quicksand;
 	font-size: 42px;
 	line-height: 49px;
-	align-items: center;
 	color: #505050;
+	font-weight: bold;
+
+	margin-left: 20px;
+	margin-top: 60px;
 }
 
-.header-left h3 {
-	position: absolute;
-	left: 10.42%;
-	right: 56.25%;
-	top: 210px;
-	bottom: 76.68%;
-
+header h3 {
 	font-family: Quicksand;
 	font-size: 24px;
 	line-height: 32px;
 	color: #878787;
 	font-weight: normal;
+
+	margin-left: 20px;
+	margin-top: 20px;
 }
 
-.application-section {
-	background-color: #F9F9F9;
-	height: 930px;
+
+
+section .row {
+	background-color: #F9F9F9;;"
 }
 
 .application-section h3 {
 	font-family: Quicksand;
 	font-size: 19px;
-	padding-left: 136px;
-	padding-top: 45px;
 	color: dimgrey;
-	width: 100%;
+	font-weight: bold;
+	margin-top: 45px;
+	margin-left: 134px;
 
+}
+
+input[type='file'] {
+	display: none;
 }
 
 form {
 	margin-left: 138px;
 	padding-top: 60px;
-	width: 52.9%;
 	border-bottom: 1px solid gainsboro;
 	padding-bottom: 55px;
-	
 }
+
+
 
 .text {
 	font-family: sans-serif;
 	font-weight: bold;
-	font-size: 14px;
+	font-size: 15px;
 	color: dimgray;
 }
 
@@ -85,14 +101,18 @@ form {
 
 .resume {
 	background-color: #ebebe0;
-	left: 370px;
-	padding: 10px 30px;
 	font-family: Quicksand;
 	font-weight: bold;
-	font-size: 13px;
+	font-size: 14px;
 	color: gray;
-	position: absolute;
 	border-radius:3px;
+	width: 30%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+
+
+	margin-left: 150px;
 }
 
 .attach-file i {
@@ -105,36 +125,26 @@ form {
 }
 
 .margin {
-	margin-top: 49px;
-}
-
-.position {
-	position: absolute;
-	left: 370px;
-
-}
-
-.profile-text {
-	position: absolute;
-	left: 630px;
-	font-family: Quicksand;
-	color: gray;
-	font-size: 11px;
-	margin-top: 3px;
-	font-weight: bold;
+	margin-top: 40px;
 }
 
 .linkedin-btn {
-	padding: 9px 34px;
 	font-family: Quicksand;
 	font-weight: bold;
-	font-size: 14px;
+	font-size: 15px;
 	color: gray;
 	background-color: #ebebe0;
 	border: none;
 	border-radius: 3px;
+	margin-left: 120px;
+	width: 35%;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
+button:focus {
+	outline: none;
+}
 
 .linkedin-btn:hover {
 	cursor: pointer;
@@ -147,10 +157,44 @@ form {
 	margin-right: 15px;
 }
 
+.profile-text {
+	position: absolute;
+	left: 670px;
+	font-family: Quicksand;
+	color: gray;
+	font-size: 11px;
+	margin-top: 3px;
+	font-weight: bold;
+}
+
 .input-box {
 	padding: 10px 155px;
 	border: 1px solid gainsboro;
 	border-radius: 4px;
+}
+
+.input-box:focus {
+	outline: none;
+}
+
+.input-name {
+	margin-left: 150.5px;
+
+}
+
+.input-email {
+	margin-left: 180px;
+}
+
+.input-phone {
+	margin-left: 182px;
+
+}
+
+.input-company {
+
+	margin-left: 100px;
+
 }
 
 .submit-btn {
@@ -176,3 +220,9 @@ form {
 .submit-btn:active {
 	border: none;
 }
+
+.submit-btn:focus {
+	outline: none;
+}
+
+
