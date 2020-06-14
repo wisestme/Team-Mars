@@ -16,8 +16,8 @@ body {
 .landingpage-background {
   background-image: url(../images/landingpage/Plane.png),
     url(../images/landingpage/background.png);
-  background-size: 30%, 380%;
-  background-position: 12% 55%, 84% 50%;
+  background-size: 30%, 400%;
+  background-position: 5% 50%, 84% 500%;
   background-repeat: no-repeat;
   height: 80vh;
 }
@@ -64,16 +64,16 @@ body {
   width: 100%;
   padding: 3% 0;
   border-radius: 0.5rem;
-  border: 1px solid #01aae4;
-  color: #fff;
-  background-color: #01aae4;
+  border: 1px solid #fff;
+  color: #01aae4;
+  background-color: #fff;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in;
 }
 .download-btn:hover {
-  color: #01aae4;
-  border: 1px solid #01aae4;
-  background-color: #fff;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: #01aae4;
 }
 
 /* Know When to Buy page on The Homepage  */
@@ -229,7 +229,6 @@ body {
   width: 275px;
   height: 300px;
 }
-
 .sectionv-download-btn {
   background-color: #01aae4;
   color: #fff;
@@ -260,6 +259,7 @@ body {
 /* FOOTER */
 .footer-large {
   display: none;
+  padding-bottom: 2rem;
 }
 .footer-mobile {
   display: flex;
@@ -275,7 +275,8 @@ body {
   width: 100%;
 }
 
-.footer-mobile .option,
+.footer-mobile-options,
+.footer-mobile .option-container,
 .footer-mobile .language,
 .footer-mobile .social,
 hr {
@@ -284,7 +285,11 @@ hr {
   margin-bottom: 2rem;
 }
 
-.footer-mobile .hooper, .footer-mobile .company, .footer-mobile .people, .footer-mobile .support, .footer-mobile .media,
+.footer-mobile .hooper,
+.footer-mobile .company,
+.footer-mobile .people,
+.footer-mobile .support,
+.footer-mobile .media,
 .footer-mobile .social {
   display: flex;
   align-items: center;
@@ -300,21 +305,13 @@ hr {
 .footer-mobile .plus-btn {
   font-weight: 900;
   padding: 0 0.3rem;
-  transition: .5s;
+  transition: 0.5s;
 }
 .footer-mobile .plus-btn:hover {
   cursor: pointer;
   color: #fa6866;
 }
-.footer-mobile .option-container .options {
-  display: flex;
-  flex-direction: column;
-  font-size: 12px;
-  margin-top: 0.3rem;
-}
-.option-container .hide {
-  display: none;
-}
+
 .footer-mobile .company .notification {
   font-size: 0.7rem;
   background-color: #fa6866;
@@ -345,10 +342,21 @@ hr {
   color: #aaa;
   font-size: 12px;
 }
+
 .footer-mobile hr {
   color: #505050;
 }
-
+.footer-mobile .option-container .hide {
+  display: none;
+}
+.footer-mobile .option-container a {
+  display: block;
+  margin: 0.3rem 0 0.3rem 0.3rem;
+  color: #aaa;
+}
+.footer-mobile .option-container a:hover {
+  color: #fa6866;
+}
 /* RESPONSIVENESS */
 @media only screen and (min-width: 768px) {
   .container {
@@ -356,12 +364,13 @@ hr {
     padding: 0 8%;
   }
   .landingpage-content {
-    margin-top: 40%;
+    margin-top: 30%;
     width: 65%;
   }
 
   .landingpage-background {
-    background-image: url(../images/landingpage/Plane.png), url(../images/landingpage/background.png);
+    background-image: url(../images/landingpage/Plane.png),
+      url(../images/landingpage/background.png);
     background-size: 30%, 190%;
     background-position: 90% 55%, 88% 50%;
     background-repeat: no-repeat;
@@ -369,7 +378,9 @@ hr {
   }
 
   .landingpage-top {
-    padding: 3% 8% 0;
+    padding: 2% 8%;
+    z-index: 9;
+    background-color: #61ccd6;
     position: fixed;
   }
   .landingpage-description {
@@ -383,7 +394,7 @@ hr {
     text-align: center;
     margin-top: 0;
   }
-  .description{
+  .description {
     width: 45%;
     text-align: left;
   }
@@ -398,10 +409,20 @@ hr {
   }
   .download-btn {
     width: 60%;
+    border: 1px solid #01aae4;
+    color: #fff;
+    background-color: #01aae4;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in;
   }
-  .title{
+  .download-btn:hover {
+    color: #01aae4;
+    border: 1px solid #01aae4;
+    background-color: #fff;
+  }
+  .title {
     text-align: left;
-    width: 45%
+    width: 45%;
   }
 
   /* SECTION III */
@@ -432,7 +453,7 @@ hr {
   .sectionii-secondimage {
     width: 30%;
     background-size: 80% 100%;
-    margin: 0 -8% 0 -10%
+    margin: 0 -8% 0 -10%;
   }
   .sectionii .sectionii-firstimagea,
   .sectionii-firstimageb,
@@ -496,10 +517,13 @@ hr {
     text-align: left;
     width: 45%;
   }
-  .pre{
+  .sectionv-download-btn {
+    width: 17%;
+  }
+  .pre {
     margin-top: 4rem;
   }
-  .title{
+  .title {
     margin-top: 0;
   }
   /* FOOTER */
@@ -510,6 +534,7 @@ hr {
   .footer-large {
     display: block;
     width: 100%;
+    position: relative;
   }
   .footer-large-first,
   .footer-large-second {
@@ -525,12 +550,18 @@ hr {
     display: flex;
     justify-content: space-between;
     padding-bottom: 0.5rem;
+    z-index: 2;
   }
   .footer-large-first .option-title {
-    border-bottom: 1px solid #f6f6f6;
+    /* border-bottom: 1px solid #f6f6f6; */
   }
   .footer-large .right {
     width: 65%;
+  }
+  .footer-large hr {
+    color: #f6f6f6;
+    position: absolute;
+    top: 16%;
   }
   .footer-large .left {
     width: 35%;
@@ -547,12 +578,16 @@ hr {
   .footer-large-second .options {
     height: 100%;
   }
-  .footer-large-second .options p {
+  .footer-large-second .options a {
     margin-top: 0.5rem;
-    height: 100%;
+    color: #878787;
+  }
+  .footer-large-second .options a:hover {
+    color: #fa6866;
   }
   .footer-large-first .option-title h4 {
     align-self: flex-start;
+    padding: 0.3rem 0;
   }
   .selected {
     border-bottom: 2px solid #505050;
@@ -586,6 +621,9 @@ hr {
     background-position: 65% center, 70% 60%;
     height: 100%;
   }
+  .landingpage .description {
+    text-align: left;
+  }
   .container {
     height: 100%;
   }
@@ -613,10 +651,12 @@ hr {
   }
   .nav-link:hover {
     border: 1px solid #fff;
+    border-radius: 8px;
   }
   .sendapp-btn {
     border: 1px solid #fff;
     padding: 0.5rem 1rem;
+    border-radius: 5px;
   }
   .sendapp-btn:hover {
     cursor: pointer;
@@ -626,7 +666,7 @@ hr {
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
   }
   .sendapp-btn:active {
-    margin-top: 5px;
+    margin-top: 8px;
     box-shadow: none;
   }
   .landingpage-content {
@@ -687,35 +727,33 @@ hr {
   .location-tag {
     position: absolute;
     width: 18.5%;
-    line-height: 1rem;
-    font-size: 1rem;
+    line-height: 2rem;
+    font-size: 2rem;
     text-align: center;
-    left: 49.75%;
+    color: #fff;
   }
   .paris .location-tag {
-    top: calc(45% - 1rem);
+    top: calc(40% - 2rem);
   }
   .cario .location-tag {
-    top: calc(52.5% - 1rem);
+    top: calc(52.6% - 2rem);
   }
   .new-york .location-tag {
-    top: 50%;
+    bottom: calc(40% - 2rem);
   }
 
   .cancun .location-tag {
-    top: calc(50% - 1rem);
+    top: calc(50% - 2rem);
   }
-  .hong-kong .location-tag {
-    top: calc(55% - 1rem);
-  }
-  .sectionv .paris {
-    align-self: flex-start;
+  .hong-kong .location-tag,
+  .new-york .location-tag {
+    top: calc(60% - 2rem);
   }
   .sectionv .paris {
     align-self: flex-start;
   }
   .sectionv .cario {
-    margin-top: 5%;
+    margin-top: 2.6%;
   }
   .sectionv .new-york,
   .sectionv .hong-kong {
