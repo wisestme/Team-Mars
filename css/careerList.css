@@ -1,0 +1,157 @@
+/* import font */
+@font-face {
+	font-family: ProximaNova;
+	src: url(fonts/proximanova.otf);
+}
+@font-face {
+	font-family: SourceSerifPro;
+	src: url(fonts/sourceserifpro.otf);
+}
+
+/* Base styles */
+body {
+	background: #ffffff;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+.white {
+	color: #ffffff;
+}
+
+/* Header section */
+
+#header-section {
+	background: url(careerListIMG/header.png);
+	background-repeat: no-repeat;
+	height: 500px;
+	margin-left: -55px;
+}
+.container-fluid {
+	padding: 30px 100px 0 152px;
+}
+.nav {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: baseline;
+}
+.flex-ul ul {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.flex-ul a {
+	color: #ffffff;
+	font-size: 15px;
+	opacity: 0.9;
+	margin: 0 0 0 0;
+}
+.flex-ul a:hover {
+	opacity: 1;
+}
+
+.border-link {
+	border-radius: 8px;
+	border: solid 1px #fff;
+	padding: 10px 20px;
+}
+.header-back-btn {
+	list-style: none;
+}
+.header-back-btn a {
+	opacity: 0.8;
+	text-decoration: none;
+}
+.header-back-btn a:hover {
+	color: #fff;
+}
+.header-back-btn:active {
+	transform: translateX(10px);
+}
+
+.back-icon {
+	border: 1px solid #ffffff;
+	box-sizing: border-box;
+	border-radius: 8px;
+	padding: 13px;
+	opacity: 0.5;
+}
+
+.span-line {
+	border-right: 1px solid #fff;
+	margin: 0 0 0 40px;
+	padding: 8px 0;
+}
+
+.fa-level-up {
+	font-size: 13px;
+}
+span.toggle-icon {
+	border: none;
+	color: #ffffff;
+	font-size: 23px;
+	text-decoration: none;
+}
+span.toggle-icon:hover {
+	color: #ffffff;
+}
+.nav-icon {
+	color: #fff;
+	font-size: 30px;
+	display: none;
+}
+.nav-icon:hover {
+	color: #fff;
+	opacity: 0.7;
+}
+h1.header-text {
+	font-size: 42px;
+	line-height: 49px;
+	padding-right: 30%;
+	padding-top: 70px;
+}
+
+.filters {
+	background: #ffffff;
+	box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.05);
+	border-radius: 8px;
+	font-weight: normal;
+
+	height: 139px;
+	width: 80%;
+	margin: 0 auto;
+
+	position: absolute;
+	top: 22rem;
+	bottom: 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.filters-box-con >*{
+	display: inline-block;
+}
+.filters-searchInput {
+	text-align: center;
+	border: none;
+	outline: none;
+}
+
+.filters-box > p{
+	border: 0.5px solid #878787;
+	box-sizing: border-box;
+	border-radius: 8px;
+	font-size: 1rem;
+	padding: .5rem 3rem;
+}
+p.filters-NOborder-box{
+	border: none;
+}
