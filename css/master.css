@@ -1234,6 +1234,7 @@ max-width: 250px
 
 #careers .wrapper {
     width: 90%;
+    flex-direction: column;
 }
 
 #careers .wrapper > * {
@@ -1254,7 +1255,7 @@ max-width: 250px
 	margin-top: 0;
 	background: #fff;
 	bottom: 12em;
-	height: 250px;
+	height: 800px;
 }
 
 #careers::before {
@@ -1283,6 +1284,15 @@ max-width: 250px
 		background: transparent;
 		padding: 0;
 		box-shadow: none;
+	}
+	
+	.bunnies-dog {
+		width: 100%;
+	}
+	.bunnies-dog img {
+		width: 100vw;
+		position: relative;
+		right: -9em;
 	}
 
 	/*#careers::after {
