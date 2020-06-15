@@ -828,10 +828,17 @@ max-width: 250px
 }
 
 	#header_section .wrapper {
+		border: 2px solid red;
 		display: block;
 		position: relative;
-		top: -2em;
+		top: -3em;
 }
+
+	/*.people-text {
+		border: 2px solid red;
+		position: relative;
+		bottom: 4em;
+	}*/
 	.background-grey {
 		background: #f6f6f6;
 		width: 100vw;
@@ -893,6 +900,16 @@ max-width: 250px
 		margin: 0 4em;
 	}
 
+	.horizontal-line {
+		width: 40px;
+		height: 4px;
+		background: red;
+		margin: 2em auto;
+		position: relative;
+		top: 1em;
+		border-radius: 20%;
+	}
+
 	.video-container {
 		grid-template-columns: 1fr;
 	}
@@ -950,22 +967,25 @@ max-width: 250px
 	
 	#accessible {
 		position: relative;
-		padding: 1em;
+		padding: 0 1em;
 		background: #fff;
+		height: 400px;
 	}
 
 	#accessible .wrapper {
 		width: 80%;
-		margin: auto;
+		margin: 0 auto;
 	}
 
 	.accessible-text {
 		width: 90%;
-		margin: auto;
+		margin: 0 auto;
+		position: relative;
+		top: -16em;
 	}
 
 	#accessible h2 {
-		margin: 2em 0 0.5em 0;
+		margin: 0 0 0.5em 0;
 		font-family: proximaNova;
 		font-size: 22px;
 		line-height: 27px;
@@ -982,9 +1002,11 @@ max-width: 250px
 	
 	.image-bunnies {
 		width: 90%;
-		margin: auto;
+		margin: 0 auto;
 		justify-content: center;
 		align-items: center;
+		position: relative;
+		top: -14em;
 	}
 	#accessible img {
 		height: 42px;
@@ -1050,8 +1072,6 @@ max-width: 250px
 	#values,
 	#offices {
 		position: relative;
-		top: 1em;
-		padding-top: 2em;
 		background: #fff;
 	}
 	
@@ -1070,7 +1090,9 @@ max-width: 250px
 		bottom: 7vh;
 		background: #fff;
 	}
+	
 
+	#values::before,
 	#accessible::before {
 		content: '.';
 		display: block;
@@ -1078,22 +1100,44 @@ max-width: 250px
 		height: 28vh;
 		background: #fff;
 		position: relative;
-		bottom: 30vh;
+		bottom: 28vh;
+	}
+	
+	#life {
+		height: 500px;
+		border: 2px solid;
+	}
+
+	#life .video-container {
+		position: relative;
+		bottom: 8em;
+		z-index: 2;
 	}
 	
 	#values {
-		padding-bottom: 2em;
+		position: relative;
+		bottom: 8em;
 	}
 
 	#offices {
-		padding: 2em 0;
+		position: relative;
+		bottom: 10em;
+	}
+	
+
+	#offices::before {
+		content: '.';
+		display: block;
+		width: 100%;
+		height: 14vh;
+		background: #fff;
+		position: relative;
+		bottom: 14vh;
 	}
 	
 	.departments {
 		width: 80%;
-		margin: auto;
-		padding-bottom: 4em;
-		padding-top: 2em;
+		margin: 0 auto;
 	}
 	.departments h2 {
 		font-family: proximaNova;
@@ -1108,6 +1152,10 @@ max-width: 250px
 		font-size: 14px;
 		line-height: 19px;
 		color: #878787;
+	}
+
+	#humans::before {
+
 	}
 
 	#humans {
