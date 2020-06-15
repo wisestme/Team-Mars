@@ -828,7 +828,6 @@ max-width: 250px
 }
 
 	#header_section .wrapper {
-		border: 2px solid red;
 		display: block;
 		position: relative;
 		top: -3em;
@@ -1105,7 +1104,6 @@ max-width: 250px
 	
 	#life {
 		height: 500px;
-		border: 2px solid;
 	}
 
 	#life .video-container {
