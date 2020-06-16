@@ -1,11 +1,11 @@
 /* import font */
 @font-face {
 	font-family: ProximaNova;
-	src: url(fonts/proximanova.otf);
+	src: url(../fonts/ProximaNova.otf);
 }
 @font-face {
 	font-family: SourceSerifPro;
-	src: url(fonts/sourceserifpro.otf);
+	src: url(../fonts/SourceSerifPro.otf);
 }
 
 /* Base styles */
@@ -28,7 +28,7 @@ li {
 /* Header section */
 
 #header-section {
-	background: url(careerListIMG/header.png);
+	background: url(../images/careerListimages/header.png);
 	background-repeat: no-repeat;
 	height: 500px;
 	margin-left: -55px;

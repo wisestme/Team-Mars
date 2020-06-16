@@ -19,7 +19,7 @@ button {
 		height: 280px;
 		margin-left: 2px;
 		padding-right: 10px;
-
+	}
 }
 
 @media all and (max-width: 350px) {
@@ -28,7 +28,7 @@ button {
 		width: 125%;
 		height: 300px;
 		margin-left: 0px;
-
+	}
 		
 		
 
