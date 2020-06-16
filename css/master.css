@@ -40,6 +40,8 @@ svg {
 /* specifics */
 body {
 	background: #fff;
+	width: 100vw;
+	overflow-x: hidden;
 }
 header .wrapper {
 	grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -876,8 +878,6 @@ max-width: 250px
 		display: block;
 	}
 
-	
-
 	.flex-large {
 		display: block;
 	}
@@ -893,6 +893,11 @@ max-width: 250px
 		padding: 0;
 		z-index: 3;
 		background: #f6f6f6;
+	}
+
+	.nav-fixed svg {
+		width: 23px;
+		height: 23px;
 	}
 
 	.nav-fixed .logo {
@@ -914,8 +919,6 @@ max-width: 250px
 	}
 	
 	video {
- 
- 
  width: 400px;
  height: 100px;
   transform: translateX(0);
@@ -941,7 +944,7 @@ max-width: 250px
 	}
 
 	.video-text p {
-		font-size: 1.5em;
+		font-size: 18px;
 		line-height: 24px;	
 	}
 	
@@ -1065,6 +1068,7 @@ max-width: 250px
 
 	#values p {
 		width: 90%;
+		margin: 0 auto;
 	}
 
 	#life,
@@ -1132,6 +1136,10 @@ max-width: 250px
 		position: relative;
 		bottom: 14vh;
 	}
+
+	#offices .slide-item img {
+		border-radius: 1em;
+	}
 	
 	.departments {
 		width: 80%;
@@ -1179,6 +1187,7 @@ max-width: 250px
 		background-size: cover;
 		background-position: center;
 		position: relative;
+		padding-left: 1em;
 		
 	}
 
@@ -1187,10 +1196,8 @@ max-width: 250px
 		font-family: MetaSerifPro;
 		font-size: 26px;
 		line-height: 26px;
-		width: 75%;
+		width: 60%;
 		color: #505050;		
-		margin-left: 2em;
-		margin-top: 2em;
 	}
 
 	.quote p {
@@ -1199,8 +1206,7 @@ max-width: 250px
 		line-height: 16px;
 		color: #000000;
 		position: absolute;
-		bottom: 6em;
-		left: 9em;
+		
 	}
 
 	#extras::before {
@@ -1219,10 +1225,14 @@ max-width: 250px
 	}
 
 	.extras-text p {
-		font-family: Proxima Nova;
+		font-family: proximaNova;
 		font-size: 18px;
 		line-height: 19px;
 		color: #878787;
+}
+
+.extras-text h2 {
+	font-size: 22px;
 }
 
 	#extras > .wrapper > div {
@@ -1231,7 +1241,7 @@ max-width: 250px
 	}
 
 #careers .wrapper {
-    width: 90%;
+    width: 98%;
     flex-direction: column;
 }
 
@@ -1246,6 +1256,11 @@ max-width: 250px
 	line-height: 27px;
 	color: #555555;
 	width: 100%;
+}
+
+.careers-text p{
+	font-size: 18px;
+	line-height: 19px;
 }
 
 #careers {
@@ -1286,11 +1301,13 @@ max-width: 250px
 	
 	.bunnies-dog {
 		width: 100%;
+		text-align: center;
+		padding: 0;
 	}
-	.bunnies-dog img {
-		width: 100vw;
+	#careers .bunnies-dog img {
+		width: 100%;
 		position: relative;
-		right: -9em;
+		
 	}
 
 	/*#careers::after {
