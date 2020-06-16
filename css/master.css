@@ -1201,12 +1201,13 @@ max-width: 250px
 	}
 
 	.quote p {
-		font-family: Proxima Nova;
+		font-family: proximaNova;
 		font-size: 12px;
 		line-height: 16px;
 		color: #000000;
 		position: absolute;
-		
+		margin-top: 0.8em;
+		font-weight: bold;
 	}
 
 	#extras::before {
