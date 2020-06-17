@@ -40,6 +40,8 @@ svg {
 /* specifics */
 body {
 	background: #fff;
+	width: 100vw;
+	overflow-x: hidden;
 }
 header .wrapper {
 	grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -667,26 +669,26 @@ video {
 
 .careers-text p {
 	font-family: Proxima Nova;
-	font-size: 24px;
-	line-height: 32px;
-	color: #878787;
-	width: 90%;
+font-size: 24px;
+line-height: 32px;
+color: #878787;
+width: 90%;
 }
 
 .careers-text a {
 	font-family: proximaNova;
-	font-size: 14px;
-	line-height: 20px;
-	display: flex;
-	text-align: center;
-	color: #FFFFFF;
-	border-radius: 8px;
-	background: #01AAE4;
-	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
-	width: 100%;
-	padding: 0.7em 5px 0.7em 50px;
-	margin-top: 2em;
-	max-width: 250px;
+font-size: 14px;
+line-height: 20px;
+display: flex;
+text-align: center;
+color: #FFFFFF;
+border-radius: 8px;
+background: #01AAE4;
+box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+width: 100%;
+padding: 0.7em 5px 0.7em 50px;
+margin-top: 2em;
+max-width: 250px
 }
 
 .careers-text span {
@@ -697,6 +699,94 @@ video {
 
 #careers {
 	margin-top: 12em;
+}
+
+footer {
+	padding: 1em;
+}
+
+footer > .wrapper {
+	justify-content: space-between;
+	padding: 2em;
+	height: 45vh;
+}
+
+.footer-left {
+	width: 30%;
+	border: 2px solid red;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+footer img {
+	width: 50%;
+	text-align: center;
+}
+
+.footer-left div:nth-child(2) {
+	position: relative;
+	bottom: 2.5em;
+	width: 50%;
+	justify-content: space-between;
+}
+
+footer select {
+	width: 80%;
+	font-weight: bold;
+}
+
+footer .social {
+	justify-content: space-between;
+}
+
+.footer-right {
+	width: 65%;
+}
+
+footer .quick-links {
+	justify-content: space-around;
+	height: 80%;
+
+}
+
+.quick-links > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	height: 100%;
+}
+
+.quick-links > div > ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100%;
+}
+
+.footer-right li {
+	list-style: none;
+}
+
+.footer-right h2 {
+	font-family: proximaNova;
+	font-size: 14px;
+	line-height: 16px;
+	color: #878787;
+	padding-bottom: 0.5em;
+	margin-bottom: 0.4em;
+	transition: 0.25s ease;
+	text-align: center;
+}
+
+.footer-right h2:hover {
+	border-bottom: 2px solid #505050;
+}
+
+.footer-right a {
+	font-family: proximaNova;
+	font-size: 12px;
+	line-height: 14px;
+	color: #878787;
 }
 
 
@@ -741,14 +831,14 @@ video {
 	.video-text h2 {
 		font-size: 48px;
 		line-height: 50px;
-	}
+}
 	.video-text p {		
 		font-size: 14px;
 		line-height: 18px;
-	}
+}
 	.nav-scroll nav {
  	left: 2em;
- 	}
+ }
 
 	.people-text {
 		width: 95%;
@@ -758,7 +848,7 @@ video {
 	.people-text quote {
 	font-size: 36px;
 	line-height: 40px;
-	}
+}
 
 	.nav-fixed {
 	/*justify-content: space-around;*/
@@ -876,8 +966,6 @@ video {
 		display: block;
 	}
 
-	
-
 	.flex-large {
 		display: block;
 	}
@@ -893,6 +981,11 @@ video {
 		padding: 0;
 		z-index: 3;
 		background: #f6f6f6;
+	}
+
+	.nav-fixed svg {
+		width: 23px;
+		height: 23px;
 	}
 
 	.nav-fixed .logo {
@@ -914,8 +1007,6 @@ video {
 	}
 	
 	video {
- 
- 
  width: 400px;
  height: 100px;
   transform: translateX(0);
@@ -941,7 +1032,7 @@ video {
 	}
 
 	.video-text p {
-		font-size: 1.5em;
+		font-size: 18px;
 		line-height: 24px;	
 	}
 	
@@ -1065,6 +1156,7 @@ video {
 
 	#values p {
 		width: 90%;
+		margin: 0 auto;
 	}
 
 	#life,
@@ -1132,6 +1224,10 @@ video {
 		position: relative;
 		bottom: 14vh;
 	}
+
+	#offices .slide-item img {
+		border-radius: 1em;
+	}
 	
 	.departments {
 		width: 80%;
@@ -1179,6 +1275,7 @@ video {
 		background-size: cover;
 		background-position: center;
 		position: relative;
+		padding-left: 1em;
 		
 	}
 
@@ -1187,20 +1284,18 @@ video {
 		font-family: MetaSerifPro;
 		font-size: 26px;
 		line-height: 26px;
-		width: 75%;
+		width: 60%;
 		color: #505050;		
-		margin-left: 2em;
-		margin-top: 2em;
 	}
 
 	.quote p {
-		font-family: Proxima Nova;
+		font-family: proximaNova;
 		font-size: 12px;
 		line-height: 16px;
 		color: #000000;
 		position: absolute;
-		bottom: 6em;
-		left: 9em;
+		margin-top: 0.8em;
+		font-weight: bold;
 	}
 
 	#extras::before {
@@ -1219,10 +1314,14 @@ video {
 	}
 
 	.extras-text p {
-		font-family: Proxima Nova;
+		font-family: proximaNova;
 		font-size: 18px;
 		line-height: 19px;
 		color: #878787;
+}
+
+.extras-text h2 {
+	font-size: 22px;
 }
 
 	#extras > .wrapper > div {
@@ -1231,7 +1330,7 @@ video {
 	}
 
 #careers .wrapper {
-    width: 90%;
+    width: 98%;
     flex-direction: column;
 }
 
@@ -1246,6 +1345,11 @@ video {
 	line-height: 27px;
 	color: #555555;
 	width: 100%;
+}
+
+.careers-text p{
+	font-size: 18px;
+	line-height: 19px;
 }
 
 #careers {
@@ -1286,11 +1390,13 @@ video {
 	
 	.bunnies-dog {
 		width: 100%;
+		text-align: center;
+		padding: 0;
 	}
-	.bunnies-dog img {
-		width: 100vw;
+	#careers .bunnies-dog img {
+		width: 100%;
 		position: relative;
-		right: -9em;
+		
 	}
 
 	/*#careers::after {
