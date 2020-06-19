@@ -20,3 +20,38 @@ $('.slides')
 	prevArrow: ".prev",
 	nextArrow: ".next"
 });
+
+
+// expand menu items
+
+// Get the plus icons
+var expandButtons = document.querySelectorAll('.fa-plus');
+
+// Get the footer menu
+ var footerMenu = document.querySelectorAll('.footer-menu');
+ console.log(footerMenu);
+
+ var footerMenuList = document.getElementById('footer').getElementsByTagName('li');
+ console.log(footerMenuList);
+
+ for (footerMenuItem of footerMenuList) {
+ 	footerMenuItem.classList.add('hide');
+ }
+
+ 
+
+// Loop through all the icons and add event listeners
+for (expandButton of expandButtons) {
+	expandButton.addEventListener('click', function() {
+		//get the hidden menu items
+		var menuList = this.parentNode.parentNode.childNodes[3].children;
+		
+		// Loop through the hidden items and display them
+		for (menuItem of menuList) {
+			// menuItem.style.display = 'block';
+			menuItem.classList.toggle('hide');
+		}	
+		
+		//this.parentNode.parentNode.childNodes[3].childNodes.style.display= 'block';
+	})
+}

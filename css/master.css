@@ -33,6 +33,14 @@
 	display: none;
 }
 
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
 svg {
 	width: 30px;
 	height: 30px;
@@ -1420,7 +1428,11 @@ footer .fas {
 	}
 
 	.footer-right ul > li {
-		display: none;
+		/*display: none;*/
+		position: relative;
+		
+		background: #aaa;
+		width: 100vw;
 	}
 
 	.footer-left {
@@ -1430,6 +1442,7 @@ footer .fas {
 
 	.footer-right {
 		width: 100%;
+		z-index: 2;
 	}
 
 	.quick-links .large-only {
@@ -1468,11 +1481,15 @@ border-radius: 8px
 	}
 	footer img {
 		width: 20%;
+		z-index: 2;
+		position: relative;
+		bottom: 4em;
 	}
 
 	#footer {
 		background: #fff;
-
+		position: relative;
+		padding-bottom: 0;
 	}
 	
 	.footer-bottom {
@@ -1506,6 +1523,13 @@ border-radius: 8px
 		background: #fff;
 		position: relative;
 		bottom: 31vh;
+	}
+	#footer .wrapper img {
+		position: absolute;
+		z-index: 2;
+		width: 20%;
+		top: -15em;
+		align-self: center;
 	}
 	/*#careers::after {
 		content: "";
