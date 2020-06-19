@@ -33,13 +33,7 @@
 	display: none;
 }
 
-.hide {
-	display: none;
-}
 
-.show {
-	display: block;
-}
 
 svg {
 	width: 30px;
@@ -1531,6 +1525,14 @@ border-radius: 8px
 		top: -15em;
 		align-self: center;
 	}
+
+	.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
 	/*#careers::after {
 		content: "";
 		width: 100%;
