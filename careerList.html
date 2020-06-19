@@ -56,32 +56,177 @@
 
             <h1 class="header-text white">We are looking for curious problem solvers. Sounds familiar?</h1>
 
-            <!-- Filters Section -->
-            <div class="filters">
-                <div class="filters-box-con">
-                    <div class="filters-box">
-                        <p>
-                            <input type="search" placeholder="Search Position" name="Search Positions" class="filters-searchInput" id=""> 
-                        </p>
-                    </div>
 
-                    <div class="filters-box ">
-                        <p>All Department <i class="fa fa-caret-down"></i></p>
+            <!--------     Filters Section   ----------->
+            <div id="filters-con">
+                <div class="row in-filters">
+                    <div class="filters-item col-md-12 col-lg-3">
+                        <input class="filters-search" type="search" placeholder="Search Positions">
+                        <i class="fa fa-search search-icon"></i>
                     </div>
-
-                    <div class="filters-box ">
-                        <p>All Cities <i class="fa fa-caret-down"></i></p>
+                    <div class="filters-item col-md-12 col-lg-3">
+                        <button class="filters-btn">All Department <i class="fa fa-caret-down btn-icon"></i></button>
                     </div>
-
-                    <div class="filters-box ">
-                        <p class="filters-NOborder-box">434 available position</p>
+                    <div class="filters-item col-md-12 col-lg-3">
+                        <button class="filters-btn">All Cities <i class="fa fa-caret-down btn-icon"></i></button>
                     </div>
-
+                    <div class="filters-item col-md-12 col-lg-3">
+                        <button class="filters-NOborder-btn">434 available position</button>
+                    </div>
                 </div>
+            </div>
+    </header>
 
+
+
+
+    <!-------  Table section ----------->
+    <div id="table-wrapper">
+        <div class="table-responsive-md table-scroll">
+            <table class="table table-con">
+                <thead>
+                    <tr>
+                        <th scope="col">Position</th>
+                        <th scope="col">Department</th>
+                        <th scope="col">Cities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="col">Copywriter</th>
+                        <td>Creative and Design</td>
+                        <td>Montreal <span class="span">...</span><i class="fa fa-arrow-right  table-icon"></i> </td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Product Designer</th>
+                        <td>Jacob</td>
+                        <td>Boston <span class="span">.....</span> <i class="fa fa-arrow-right  table-icon"></i> </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Illustrator </th>
+                        <td>Larry the Bird</td>
+                        <td>Remote <span class="span">....</span> <i class="fa fa-arrow-right  table-icon"></i> </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">French Copywriter</th>
+                        <td>Mark</td>
+                        <td>Montreal <span class="span">...</span><i class="fa fa-arrow-right  table-icon"></i> </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Graphic Designer</th>
+                        <td>Jacob</td>
+                        <td>Boston <span class="span">.....</span><i class="fa fa-arrow-right  table-icon"></i></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Sr. Graphic Designer</th>
+                        <td>Larry the Bird</td>
+                        <td>Remote <span class="span">....</span><i class="fa fa-arrow-right  table-icon"></i></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Product Designer</th>
+                        <td>Mark</td>
+                        <td>Boston <span class="span">.....</span><i class="fa fa-arrow-right  table-icon"></i></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Illustrator</th>
+                        <td>Jacob</td>
+                        <td>Remote <span class="span">....</span><i class="fa fa-arrow-right  table-icon"></i></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">French Copywriter</th>
+                        <td>Larry the Bird</td>
+                        <td>Montreal <span class="span">.</span> <i class="fa fa-arrow-right  table-icon"></i></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Graphic Designer</th>
+                        <td>Mark</td>
+                        <td>Boston <span class="span">.....</span><i class="fa fa-arrow-right  table-icon"></i></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Sr. Graphic Designer</th>
+                        <td>Jacob</td>
+                        <td>Remote <span class="span">....</span><i class="fa fa-arrow-right  table-icon"></i></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Copywriter</th>
+                        <td>Jacob</td>
+                        <td>Montreal <span class="span">.</span> <i class="fa fa-arrow-right  table-icon"></i></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Illustrator</th>
+                        <td>Larry the Bird</td>
+                        <td>Boston <span class="span">.....</span><i class="fa fa-arrow-right  table-icon"></i></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Illustrator</th>
+                        <td>Mark</td>
+                        <td>Boston <span class="span">.....</span><i class="fa fa-arrow-right  table-icon"></i></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Copywriter</th>
+                        <td>Jacob</td>
+                        <td>Montreal <span class="span">..</span><i class="fa fa-arrow-right  table-icon"></i></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Copywriter</th>
+                        <td>Larry the Bird</td>
+                        <td>Montreal <span class="span">..</span><i class="fa fa-arrow-right  table-icon"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+    <!------- Perks Section  ----------->
+
+    <!-- desktop setion -->
+    <div class="container desktop-view">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 dktop-perks">
+                <img class="dktop-view" src="./images/careerListimages/Stay healthy illo.jpg" alt="Stay healthy">
+                <h4>Stay Healthy</h4>
+                <p>Full medical, dental, and vision benefits. Life insurance. Long and short-term disability plans. All
+                    on us.
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 dktop-perks">
+                <img class="dktop-view" src="./images/careerListimages/Get paid illo.jpg" alt="Get paid">
+                <h4>Get Paid</h4>
+                <p>Competitive salary. Company stock options. Commuter benefits. 401(k) retirement savings plan. </p>
+            </div>
+            <div class="col-lg-4 col-md-6 dktop-perks">
+                <img class="dktop-view" src="./images/careerListimages/Take off illo.jpg" alt="Take off">
+                <h4>Take Off</h4>
+                <p>Flexible work schedule and vacation plan. Emergency travel assistance. Travel insurance. IATA card.
+                </p>
             </div>
         </div>
-    </header>
+    </div>
+
+    <!-- mobile section -->
+    <div class="mobile-view">
+        <div class="mobile-perks">
+            <img src="./images/careerListimages/Vector (1).png" alt="" class="mobile-img">
+            <h4>We take food seriously</h4>
+            <p>Catered lunches, Montreal bagels, kombucha on tap, craft beer, endless snacks, espresso machine</p>
+        </div>
+        <div class="mobile-perks">
+            <img src="./images/careerListimages/Vector (2).png" alt="" class="mobile-img">
+            <h4>Learn something new</h4>
+            <p>At-work French classes, book clubs, board game nights, forensic Fridays, lunchtime debates, table time
+            </p>
+        </div>
+        <div class="mobile-perks">
+            <img src="./images/careerListimages/Vector (3).png" alt="" class="mobile-img">
+            <h4>Be Yourself</h4>
+            <p>Casual work environment, loft-like workspaces, slack channels for every interest group</p>
+        </div>
+
+        <img src="./images/careerListimages/Vector (5).png" alt="" class="mobile-view-logo">
+    </div>
+
 
 
 
