@@ -1421,12 +1421,24 @@ footer .fas {
 		margin-top: 1em;
 	}
 
+	.footer-menu {
+		position: relative;
+	}
+
+	.footer-right ul {
+		position: absolute;
+		top: 7em;
+	}
+
 	.footer-right ul > li {
 		/*display: none;*/
-		position: relative;
 		
+		
+		z-index: 2;
 		background: #aaa;
 		width: 100vw;
+		border-bottom: 1px solid #999;
+		padding: 0.5em;
 	}
 
 	.footer-left {
