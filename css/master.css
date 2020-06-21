@@ -1425,7 +1425,7 @@ footer .fas {
 		position: relative;
 	}
 
-	.footer-right ul {
+	#footer .footer-right ul {
 		position: absolute;
 		top: 7em;
 	}
@@ -1434,7 +1434,7 @@ footer .fas {
 		/*display: none;*/
 		
 		
-		z-index: 2;
+		
 		background: #aaa;
 		width: 100vw;
 		border-bottom: 1px solid #999;
@@ -1539,11 +1539,15 @@ border-radius: 8px
 	}
 
 	.hide {
-	display: none;
+	/*display: none;*/
+	opacity: 0;
+	transition: 0.5s ease;
 }
 
 .show {
-	display: block;
+	/*display: block;*/
+	opacity: 1;
+	transition: 1s ease;
 }
 	/*#careers::after {
 		content: "";
