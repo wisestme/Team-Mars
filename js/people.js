@@ -51,7 +51,7 @@ for (expandButton of expandButtons) {
 			// menuItem.style.display = 'block';
 			menuItem.classList.toggle('hide');
 			menuItem.classList.toggle('show');
-			menuItem.style.zIndex = '2';
+			//menuItem.style.zIndex = '2';
 		}	
 		
 		//this.parentNode.parentNode.childNodes[3].childNodes.style.display= 'block';

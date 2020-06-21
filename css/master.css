@@ -1548,6 +1548,7 @@ border-radius: 8px
 	/*display: block;*/
 	opacity: 1;
 	transition: 1s ease;
+	z-index: 2;
 }
 	/*#careers::after {
 		content: "";
