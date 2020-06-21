@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hopper</title>
-    <!-- <link
+    <link
       href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
-      rel="stylesheet"/> -->
+      rel="stylesheet"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
     <link rel="stylesheet" href="./css/homepage.css" />
   </head>
@@ -17,7 +17,7 @@
         <div class="container">
           <div class="landingpage-top">
             <div class="hamburgermenu">
-              <img src="./icons/menu.svg" alt="menu button" />
+              <img src="./icons/menu1.svg" alt="menu button" />
             </div>
             <div class="logo">
               <a href="index.html"
@@ -36,13 +36,45 @@
                   /></a>
                 </li>
               </ul>
-              <a href="./cta-modal.html" class="sendapp-btn">Send app to your phone</a>
+              <a href="#" class="sendapp-btn">Send app to your phone</a>
             </div>
 
             <div class="support">
               <img src="./icons/help.svg" alt="help button" />
             </div>
+          </div> 
+          <div class="sub-nav hide">
+            <div class="hamburgermenu">
+              <img src="./icons/menu.svg" alt="menu button" />
+            </div>
+            <div class="logo">
+              <a href="index.html"
+                >
+                <img src="images/logo.png" alt="logo">
+                /></a>
+            </div>
+            <div class="nav-btns">
+              <ul class="nav">
+                <li><a href="#" class="nav-link">The App</a></li>
+                <li><a href="#" class="nav-link">Features</a></li>
+                <li><a href="#" class="nav-link">The Team</a></li>
+                <li><a href="#" class="nav-link">Deals</a></li>
+
+                <li class="divide">|</li>
+                <li>
+                  <a href="#" class="support"
+                    >SUPPORT <img src="./icons/support.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
+              <a href="./cta-modal.html" class="sendapp-btn">Send app to your phone <img src="images/ic-send.png" alt="" ></a>
+            </div>
+
+            <div class="support">
+              <img src="./icons/help1.svg" alt="help button" />
+            </div>
           </div>
+          
           <div class="landingpage-content">
             <img
               src="./images/landingpage/apple-ios.png"
@@ -74,16 +106,22 @@
             deals.
           </p>
         </div>
-        <div class="sectionii-images">
-          <div class="sectionii-firstimage">
-            <div class="sectionii-firstimagec image mobile"></div>
-            <div class="sectionii-firstimagea image"></div>
-            <div class="sectionii-firstimageb image"></div>
+
+        <div class="sectionii-bottom-images">
+          <div class="sectionii-bottom-first image">
+            <img src="./images/sectionii/2-left.png" alt="" />
           </div>
-          <div class="sectionii-secondimage"></div>
-          <div class="sectionii-thirdimage">
-            <div class="sectionii-thirdimagea image"></div>
-            <div class="sectionii-thirdimageb image"></div>
+          <div class="sectionii-bottom-second image">
+            <img src="./images/sectionii/1-left.png" alt="" />
+          </div>
+          <div class="sectionii-bottom-center image">
+            <img src="./images/sectionii/0-center.png" alt="" />
+          </div>
+          <div class="sectionii-bottom-fourth image">
+            <img src="./images/sectionii/1-right.png" alt="" />
+          </div>
+          <div class="sectionii-bottom-fifth image">
+            <img src="./images/sectionii/2-right.png" alt="" />
           </div>
         </div>
       </div>
@@ -304,14 +342,14 @@
               <img src="./icons/Vector1.svg" alt="" />
             </div>
             <div class="option-title right">
-              <div class="option"><h4 class="selected">Hooper</h4></div>
-              <div class="option"><h4>Company</h4></div>
-              <div class="option"><h4>People</h4></div>
+              <div class="option"><a href="index.html">Hooper</a></div>
+              <div class="option"><a href="#">Company</a></div>
+              <div class="option"><a href="./people.html">People</a></div>
               <div class="option">
-                <h4>Support <img src="./icons/Vector.svg" alt="" /></h4>
+                <a href="">Support <img src="./icons/Vector.svg" alt="" /></a>
               </div>
               <div class="option">
-                <h4>Media <img src="./icons/Vector.svg" alt="" /></h4>
+                <a href="">Media <img src="./icons/Vector.svg" alt="" /></a>
               </div>
             </div>
             <div class="footer-large-second">
@@ -382,6 +420,7 @@
       </div>
     </div>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="./js/sectionv/nav.js"></script>
     <script src="./js/sectionv/swiper.js"></script>
     <script src="./js/sectionv/footer.js"></script>
   </body>
