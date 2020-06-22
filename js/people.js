@@ -4,6 +4,7 @@ let modal = document.querySelector('#modal');
 
 menuIcon.addEventListener('click', function(){
 	modal.style.left = '0';
+	modal.style.zIndex = '4';
 });
 
 closeIcon.addEventListener('click', function(){

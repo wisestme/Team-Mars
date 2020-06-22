@@ -81,7 +81,7 @@
 			</div>
 		</div>
 	</section>
-	<section id="modal" class="hide">
+	<section id="modal">
 		<div class="wrapper">
 			<div class="close">
 				<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="cross" class="svg-inline--fa fa-cross fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path d="M1016.88 824.878c-.004-.004-.008-.008-.012-.01l-310.643-310.65 310.644-310.65.012-.01a31.763 31.763 0 0 0 7.312-11.416c4.246-11.376 1.824-24.682-7.324-33.83L870.122 11.566C860.974 2.42 847.672 0 836.294 4.246a31.826 31.826 0 0 0-11.418 7.31c0 .004-.004.006-.008.01L514.22 322.218 203.572 11.568l-.01-.01a31.794 31.794 0 0 0-11.414-7.31c-11.38-4.248-24.682-1.826-33.83 7.32L11.57 158.316c-9.148 9.148-11.568 22.452-7.322 33.828a31.816 31.816 0 0 0 7.312 11.416c.004.002.006.006.01.01l310.65 310.648L11.57 824.87l-.008.01a31.859 31.859 0 0 0-7.314 11.414C0 847.67 2.422 860.976 11.57 870.124l146.748 146.746c9.15 9.148 22.452 11.568 33.83 7.322a31.834 31.834 0 0 0 11.416-7.312c.002-.004.006-.006.01-.01l310.648-310.65 310.648 310.65.012.008a31.822 31.822 0 0 0 11.414 7.314c11.378 4.246 24.684 1.826 33.828-7.322l146.746-146.748c9.148-9.148 11.57-22.454 7.324-33.83a31.805 31.805 0 0 0-7.314-11.414z"></path>
@@ -308,8 +308,13 @@
 		<div class="flex">
 			<img class="small-only" src="./images/logo-grey.png">
 		</div>
+		<div class="line large-only">
+			<hr />
+		</div>
+		
 		<div class="wrapper flex">
 			<!-- <img class="small-only" src="./images/logo.png"> -->
+
 			<div class="footer-left flex">
 				<img class="large-only" src="./images/logo-text.png" alt="">
 				<div class="flex select">
@@ -317,8 +322,12 @@
 					<path d="M7.4925 0C3.3525 0 0 3.36 0 7.5C0 11.64 3.3525 15 7.4925 15C11.64 15 15 11.64 15 7.5C15 3.36 11.64 0 7.4925 0ZM12.69 4.5H10.4775C10.2375 3.5625 9.8925 2.6625 9.4425 1.83C10.8225 2.3025 11.97 3.2625 12.69 4.5ZM7.5 1.53C8.1225 2.43 8.61 3.4275 8.9325 4.5H6.0675C6.39 3.4275 6.8775 2.43 7.5 1.53ZM1.695 9C1.575 8.52 1.5 8.0175 1.5 7.5C1.5 6.9825 1.575 6.48 1.695 6H4.23C4.17 6.495 4.125 6.99 4.125 7.5C4.125 8.01 4.17 8.505 4.23 9H1.695ZM2.31 10.5H4.5225C4.7625 11.4375 5.1075 12.3375 5.5575 13.17C4.1775 12.6975 3.03 11.745 2.31 10.5ZM4.5225 4.5H2.31C3.03 3.255 4.1775 2.3025 5.5575 1.83C5.1075 2.6625 4.7625 3.5625 4.5225 4.5ZM7.5 13.47C6.8775 12.57 6.39 11.5725 6.0675 10.5H8.9325C8.61 11.5725 8.1225 12.57 7.5 13.47ZM9.255 9H5.745C5.6775 8.505 5.625 8.01 5.625 7.5C5.625 6.99 5.6775 6.4875 5.745 6H9.255C9.3225 6.4875 9.375 6.99 9.375 7.5C9.375 8.01 9.3225 8.505 9.255 9ZM9.4425 13.17C9.8925 12.3375 10.2375 11.4375 10.4775 10.5H12.69C11.97 11.7375 10.8225 12.6975 9.4425 13.17ZM10.77 9C10.83 8.505 10.875 8.01 10.875 7.5C10.875 6.99 10.83 6.495 10.77 6H13.305C13.425 6.48 13.5 6.9825 13.5 7.5C13.5 8.0175 13.425 8.52 13.305 9H10.77Z" fill="#505050"/>
 					</svg>
 
-					<select>
+					<select class="small-only">
 						<option>Language</option>
+						<option>English</option>
+						<option>French</option>
+					</select>
+					<select class="large-only">
 						<option>English</option>
 						<option>French</option>
 					</select>
@@ -423,7 +432,11 @@
 					</div>
 					<div class="footer-menu">
 						<div class="menu-head flex">
-							<h2>Support</h2>
+							<div class="flex">
+								<h2>Support</h2>
+								<img class="large-only" src="./icons/Vector.svg" alt="">
+							</div>
+							
 							<div class="open-close">
 								<i class="fas fa-plus"></i>
 								<i class="fas fa-window-close"></i>
@@ -440,7 +453,11 @@
 					</div>
 					<div class="footer-menu large-only">
 						<div class="menu-head flex">
-							<h2>Media</h2>
+							<div class="flex">
+								<h2>Media</h2>
+								<img class="large-only" src="./icons/Vector.svg" alt="">
+							</div>
+							
 							<div class="open-close">
 								<i class="fas fa-plus"></i>
 								<i class="fas fa-window-close"></i>
