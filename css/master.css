@@ -726,7 +726,7 @@ footer img {
 
 .footer-left div:nth-child(2) {
 	position: relative;
-	bottom: 2.5em;
+	bottom: 1.5em;
 	width: 50%;
 	justify-content: space-between;
 }
@@ -1408,9 +1408,13 @@ footer .fas {
 		flex-direction: column-reverse;
 	}
 
-	.footer-right div {
+	.footer-right > div {
 		flex-direction: column;
 		align-items: flex-start;
+		width: 100%;
+	}
+
+	.footer-right > div > div {
 		width: 100%;
 	}
 
@@ -1423,6 +1427,18 @@ footer .fas {
 
 	.footer-menu {
 		position: relative;
+	}
+
+	.menu-head {
+		justify-content: space-between;
+		width: 100%;
+		
+		position: relative;
+	}
+
+	.open-close {
+		display: block;
+		
 	}
 
 	#footer .footer-right ul {
@@ -1456,7 +1472,14 @@ footer .fas {
 	}
 
 	footer .fas {
-		display: block;
+		display: inline;
+		float: right;
+		position: absolute;
+	}
+
+	footer .fa-window-close {
+		
+		display: none;
 	}
 
 	#footer .select {
