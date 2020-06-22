@@ -43,6 +43,8 @@ body {
 }
 
 
+}
+
 button:focus {
 	outline: none;
 }
@@ -106,6 +108,7 @@ button:focus {
 	margin-top: 180px;
 	
 	
+	
 	}
 
 	.font-type1 {
@@ -138,12 +141,18 @@ button:focus {
 	.appstore-img {
 		margin-left: 50px;
 		margin-bottom: 20px;
+		position: absolute;
+		left: -5px;
+		top: 500px;
 		
 	}
 
 	.playstore-img {
 		margin-left: 50px;
 		margin-bottom: 10px;
+		position: absolute;
+		left: -7px;
+		top: 550px;
 		
 	}
 

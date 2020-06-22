@@ -3,10 +3,12 @@
 	* {
 		overflow-x: hidden;
 		
+		
 	}
 
 	body {
 		justify-content: center;
+
 
 	}
 
@@ -34,6 +36,10 @@
 
 	}
 
+	.application-section h2 {
+		height: 120%;
+	}
+
 	.text {
 		font-size: 10px;
 
@@ -41,7 +47,7 @@
 
 
 	.margin {
-		margin-top: 5px;
+		margin-top: 10px;
 	}
 
 
@@ -53,7 +59,7 @@
 	.resume {
 		
 		font-size: 10px;
-		width: 20%;
+		width: 31%;
 		text-align: center;
 		margin-left: 35px;
 		margin-bottom: -10px;
@@ -63,7 +69,7 @@
 	.linkedin-btn {
 		font-size: 10px;
 		margin-left: 17px;
-		width: 20%;
+		width: 31%;
 		text-align: center;
 	}
 
@@ -96,9 +102,10 @@
 	}
 
 	.submit-btn {
-		width: 30%;
+		width: 41%;
 		margin-left: 20px;
 		font-size: 11px;
+		
 	}
 
 

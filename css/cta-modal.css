@@ -116,75 +116,14 @@ button:focus {
 		width: 100%;
 	}
 
-	.send-icon {
-		margin-left: 120px;
-		margin-top: 180px;
+	.close {
 		
-	}
-
-	.font-type1 {
-	font-size: 15px;
-	width: 110%;
-	margin-left: 10px;
-	}
-
-.font-type2 {
-		font-size: 13px;
-		line-height: 20px;
-		width: 110%;
-		margin-left: 10px;
-	}
-
-	input {
-		width: 100%;
-		border-radius: 10px;
-		padding-left: 0px;
-		margin-left: 20px;
-		text-align: center;
-		margin-bottom: 10px;
-
-	}
-
-
-.button {
-	width: 101%;
-	border-radius: 10px;
-	margin-right: 0px;
-	margin-left: 20px;	
-	}
-
-	.images {
-		margin-left: 0px;
-		margin-top: 150px;
-		margin-bottom: 30px;
-	}
-
-	.appstore-img {
-		margin-left: 70px;
-		margin-bottom: 20px;
-		
-	}
-
-	.playstore-img {
-		margin-left: 70px;
-		margin-bottom: 10px;
-		
-	}
-
-
-
-}
-
-@media all and (max-width: 769px) {
-
-	body {
-		overflow-x: hidden;
-		width: 100%;
 	}
 
 	.send-icon {
-		margin-left: 150px;
-		margin-top: 180px;
+	margin-left: 120px;
+	margin-top: 180px;
+	
 	
 	}
 
@@ -238,7 +177,84 @@ button:focus {
 		
 	}
 
+
+
+}
+
+@media all and (max-width: 769px) {
+
+	body {
+		overflow-x: hidden;
+		width: 100%;
+	}
+
+	.close {
+		
+	}
+
+	.send-icon {
+	margin-left: 50px;
+	margin-top: 180px;
 	
+	}
+
+	.font-type1 {
+	font-size: 15px;
+	width: 110%;
+	margin-left: 10px;
+	}
+
+.font-type2 {
+	font-size: 13px;
+	line-height: 20px;
+	width: 110%;
+	margin-left: 10px;
+	}
+
+	input {
+	width: 100%;
+	border-radius: 10px;
+	padding-left: 0px;
+	margin-left: 20px;
+	text-align: center;
+	margin-bottom: 10px;
+
+
+	}
+
+
+.button {
+	width: 101%;
+	border-radius: 10px;
+	margin-right: 0px;
+	margin-left: 20px;	
+	}
+
+	.images {
+		margin-left: 0px;
+		margin-top: 150px;
+		margin-bottom: 30px;
+	}
+
+	.appstore-img {
+		margin-left: 70px;
+		margin-bottom: 20px;
+		position: absolute;
+		left: -6px;
+		top: 550px;
+		
+	}
+
+	.playstore-img {
+		position: absolute;
+		left: -7px;
+		top: 590px;
+		margin-left: 70px;
+		margin-bottom: 10px;
+		
+	}
+
+		
 }
 
 @media all and (max-width: 1040px) {
@@ -248,16 +264,20 @@ button:focus {
 		width: 100%;
 	}
 
+	.close {
+		
+	}
+
 	.send-icon {
-		margin-left: 240px;
-		margin-top: 180px;
+	margin-left: 240px;
+	margin-top: 180px;
 	
 	}
 
 	.font-type1 {
-		font-size: 15px;
-		width: 110%;
-		margin-left: 10px;
+	font-size: 15px;
+	width: 110%;
+	margin-left: 10px;
 	}
 
 .font-type2 {
