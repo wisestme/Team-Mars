@@ -183,7 +183,7 @@ main .wrapper {
 	justify-content: space-around;
 	align-items: center;
 	width: 98%;
-	padding: 0 4em 0 2em;
+	padding: 2em 4em 0 2em;
 	margin: 2em auto;
 }
 
@@ -951,6 +951,10 @@ hr {
     width: 100%;
 }
 
+.top-header {
+	padding-top: 1em;
+}
+
 	#header_section .wrapper {
 		display: block;
 		position: relative;
@@ -1024,6 +1028,7 @@ hr {
 
 	.nav-fixed .logo {
 		margin: 0 4em;
+		z-index: 4;
 	}
 
 	.horizontal-line {
