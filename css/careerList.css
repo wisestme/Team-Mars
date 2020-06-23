@@ -8,9 +8,16 @@
 	src: url(../fonts/SourceSerifPro.otf);
 }
 
-/*********   Base styles   ********/
+/*********       Base styles          ********/
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
 body {
-	background: #fafafa;
 	font-family: ProximaNova;
 }
 a {
@@ -29,9 +36,9 @@ li {
 	cursor: pointer;
 }
 
-/********     Header section        *********/
+/********               Header section        *********/
 #header-section {
-	background: url(../images/careerListimages/header.png);
+	background: url(../images/careerListIMG/header.png);
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 500px;
@@ -43,7 +50,6 @@ li {
 .nav {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	justify-content: baseline;
 }
 .flex-ul ul {
 	width: 500px;
@@ -54,7 +60,7 @@ li {
 
 .flex-ul a {
 	color: #fff;
-	font-size: 15px;
+	font-size: 1rem;
 	opacity: 0.9;
 }
 .flex-ul a:hover {
@@ -118,6 +124,9 @@ span.toggle-icon:hover {
 	color: #fff;
 	opacity: 0.7;
 }
+.hopper-logo {
+	display: none;
+}
 h1.header-text {
 	font-size: 3rem;
 	line-height: 69px;
@@ -125,7 +134,7 @@ h1.header-text {
 	padding-top: 50px;
 }
 
-/*******        filters section     **********/
+/*******              filters section         **********/
 #filters-con {
 	background: #fff;
 	box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.05);
@@ -136,8 +145,10 @@ h1.header-text {
 	width: 80%;
 	position: absolute;
 	top: 74%;
-	left: 10%;
+	left: 0;
+	right: 0;
 	padding: 50px 30px;
+	margin: 0 auto;
 }
 
 .in-filters {
@@ -187,10 +198,13 @@ input.filters-search {
 	border: 0.5px solid #878787;
 }
 
-/**********    Table section      ********/
-#table-wrapper {
-	margin: 10rem 0 2rem;
+/**********             Table section         ********/
+#desktop-table {
+	padding: 8rem 0;
 	background: #fafafa;
+}
+.mobile-table {
+	display: none;
 }
 .table-con {
 	width: 1030px;
@@ -234,19 +248,24 @@ td i.fa-arrow-right {
 	visibility: hidden;
 }
 
-/*******    Perks Section     *******/
+/*******               Perks Section          *******/
 
 /* desktop section */
 .desktop-view {
+	background: #fff;
 	padding: 7rem 1rem 3rem 4rem;
-	width: 85%;
+	width: 90%;
 	text-align: left;
 }
 .dktop-perks {
-	padding: 30px 0;
+	margin: 30px 0;
+	background: #ffffff;
+	box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.05);
+	border-radius: 8px;
+	width: 350px;
 }
 .dktop-perks img {
-	width: 85%;
+	width: 100%;
 	margin-bottom: 20px;
 }
 .dktop-perks h4 {
@@ -263,5 +282,56 @@ td i.fa-arrow-right {
 }
 /* mobile section */
 .mobile-view {
+	display: none;
+	background: #fff;
+}
+
+/************ Footer section **********/
+#footer {
+	background: #fff;
+}
+.desktop-footer {
+	padding: 0 0 0 3rem;
+	margin: 6rem 0 6rem 0;
+}
+
+.footer-li li a {
+	color: #878787;
+	font-size: .7rem;
+	line-height: 3em;
+}
+.footer-li li a:hover {
+	color: #505050;
+}
+.icon-section {
+	margin-top: 30px;
+}
+.icon-section h4 {
+	margin-top: 27px;
+	color: #505050;
+	font-size: 13px;
+	border-radius: 8px;
+	text-transform: uppercase;
+}
+
+.icon-section a .fa {
+	color: #505050;
+	margin-top: 5.8rem;
+	margin-right: 1.1rem;
+}
+
+li a.footer-bold-link {
+	font-size: .9rem;
+	line-height: 5em;
+	padding-bottom: 10px;
+	padding-top: 0;
+}
+li a.footer-bold-link:hover {
+	border-bottom: solid 2px #505050;
+}
+.mobile-footer {
+	display: none;
+}
+.fixed-footer-nav {
 	display: none;
 }
