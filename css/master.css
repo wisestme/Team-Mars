@@ -183,7 +183,7 @@ main .wrapper {
 	justify-content: space-around;
 	align-items: center;
 	width: 98%;
-	padding: 0 4em 0 2em;
+	padding: 2em 4em 0 2em;
 	margin: 2em auto;
 }
 
@@ -319,8 +319,8 @@ main .wrapper {
 	height: 100vh;
 	background: rgba(0, 0, 0, 0.5);
 	position: fixed;
-	top: 0;
-	left: -100vw;
+	top: -100vh;
+	left: 0;
 	z-index: 4;
 	transition: 0.5s ease;
 }
@@ -343,11 +343,17 @@ main .wrapper {
 #modal nav {
 	margin-top: 2em;
 }
+
+#modal nav ul {
+	flex-direction: column;
+	justify-content: center;
+}
 #modal li {
 	display: block;
 	list-style: none;
 	font-size: 1em;
 	margin: 1.5em 0;
+	text-align: center;
 }
 
 /* From Life at Hopper Section */
@@ -705,6 +711,7 @@ max-width: 250px
 
 footer {
 	padding: 1em;
+	position: relative;
 }
 
 footer > .wrapper {
@@ -719,14 +726,21 @@ footer > .wrapper {
 	justify-content: space-between;
 }
 
-footer img {
-	width: 50%;
+.footer-left img,
+footer > div > img {
+	width: 40%;
 	text-align: center;
+	position: relative;
+	bottom: 1.5em;
+}
+
+footer > div > img {
+	width: 25%;
 }
 
 .footer-left div:nth-child(2) {
 	position: relative;
-	bottom: 2.5em;
+	bottom: 1.8em;
 	width: 50%;
 	justify-content: space-between;
 }
@@ -794,6 +808,27 @@ footer .fas {
 	color: #878787;
 }
 
+.line {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	opacity: 0.3;
+	padding-right: 2em;
+}
+hr {
+	position: absolute;
+	top: 4.5em;
+	width: 88vw;
+	text-align: center;
+}
+
+.menu-head div:first-child {	
+	align-items: flex-start;
+}
+
+.menu-head div:first-child > img {
+	margin: 0.2em;
+}
 
 /* Media Queries */
 /* Minor */
@@ -922,6 +957,10 @@ footer .fas {
     width: 100%;
 }
 
+.top-header {
+	padding-top: 1em;
+}
+
 	#header_section .wrapper {
 		display: block;
 		position: relative;
@@ -995,6 +1034,7 @@ footer .fas {
 
 	.nav-fixed .logo {
 		margin: 0 4em;
+		z-index: 4;
 	}
 
 	.horizontal-line {
@@ -1408,9 +1448,13 @@ footer .fas {
 		flex-direction: column-reverse;
 	}
 
-	.footer-right div {
+	.footer-right > div {
 		flex-direction: column;
 		align-items: flex-start;
+		width: 100%;
+	}
+
+	.footer-right > div > div {
 		width: 100%;
 	}
 
@@ -1421,12 +1465,36 @@ footer .fas {
 		margin-top: 1em;
 	}
 
+	.footer-menu {
+		position: relative;
+	}
+
+	.menu-head {
+		justify-content: space-between;
+		width: 100%;
+		
+		position: relative;
+	}
+
+	.open-close {
+		display: block;
+		
+	}
+
+	#footer .footer-right ul {
+		position: absolute;
+		top: 7em;
+	}
+
 	.footer-right ul > li {
 		/*display: none;*/
-		position: relative;
+		
+		
 		
 		background: #aaa;
 		width: 100vw;
+		border-bottom: 1px solid #999;
+		padding: 0.5em;
 	}
 
 	.footer-left {
@@ -1444,7 +1512,14 @@ footer .fas {
 	}
 
 	footer .fas {
-		display: block;
+		display: inline;
+		float: right;
+		position: absolute;
+	}
+
+	footer .fa-window-close {
+		
+		/*display: none;*/
 	}
 
 	#footer .select {
@@ -1527,11 +1602,16 @@ border-radius: 8px
 	}
 
 	.hide {
-	display: none;
+	/*display: none;*/
+	opacity: 0;
+	transition: 0.5s ease;
 }
 
 .show {
-	display: block;
+	/*display: block;*/
+	opacity: 1;
+	transition: 1s ease;
+	z-index: 2;
 }
 	/*#careers::after {
 		content: "";
