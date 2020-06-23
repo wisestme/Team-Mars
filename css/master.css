@@ -319,8 +319,8 @@ main .wrapper {
 	height: 100vh;
 	background: rgba(0, 0, 0, 0.5);
 	position: fixed;
-	top: 0;
-	left: -100vw;
+	top: -100vh;
+	left: 0;
 	z-index: 4;
 	transition: 0.5s ease;
 }
@@ -343,11 +343,17 @@ main .wrapper {
 #modal nav {
 	margin-top: 2em;
 }
+
+#modal nav ul {
+	flex-direction: column;
+	justify-content: center;
+}
 #modal li {
 	display: block;
 	list-style: none;
 	font-size: 1em;
 	margin: 1.5em 0;
+	text-align: center;
 }
 
 /* From Life at Hopper Section */

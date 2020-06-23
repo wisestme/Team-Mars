@@ -3,12 +3,11 @@ let menuIcon = document.querySelector('.fa-bars');
 let modal = document.querySelector('#modal');
 
 menuIcon.addEventListener('click', function(){
-	modal.style.left = '0';
-	modal.style.zIndex = '4';
+	modal.style.top = '0';
 });
 
 closeIcon.addEventListener('click', function(){
-	modal.style.left = '-100vw';
+	modal.style.top = '-100vh';
 });
 
 // First Slider
