@@ -1048,6 +1048,11 @@ hr {
 		z-index: 4;
 	}
 
+	#modal .logo {
+		width: 100%;
+		text-align: center;
+	}
+
 	.horizontal-line {
 		width: 50px;
 		height: 4px;
