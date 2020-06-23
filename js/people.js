@@ -7,7 +7,7 @@ menuIcon.addEventListener('click', function(){
 });
 
 closeIcon.addEventListener('click', function(){
-	modal.style.top = '-100vh';
+	modal.style.top = '-110vh';
 });
 
 // First Slider

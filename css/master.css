@@ -201,7 +201,7 @@ main .wrapper {
 	margin-right: 3em;
 	color: #878787;
 	font-family: proximaNova, sans-serif;
-	font-size: 12px;
+	font-size: 16px;
 	line-height: 17px;
 }
 .nav-fixed li:last-child {
@@ -319,7 +319,7 @@ main .wrapper {
 	height: 100vh;
 	background: rgba(0, 0, 0, 0.5);
 	position: fixed;
-	top: -100vh;
+	top: -110vh;
 	left: 0;
 	z-index: 4;
 	transition: 0.5s ease;
@@ -330,7 +330,7 @@ main .wrapper {
 	height: 20px;
 	float: left;
 	position: relative;
-	top: -2em;
+	top: -1.5em;
 	left: -1em;
 }
 
@@ -340,7 +340,7 @@ main .wrapper {
 	height: 20px;
 	float: right;
 	position: relative;
-	top: -2em;
+	top: -1.5em;
 	
 }
 
@@ -349,6 +349,7 @@ main .wrapper {
 	background: #fff;
 	color: #fff;
 	padding: 3em;
+	height: 100vh;
 }
 #modal nav {
 	margin-top: 2em;
@@ -1039,7 +1040,7 @@ hr {
 
 	.nav-fixed svg {
 		width: 23px;
-		height: 23px;
+		height: 23px;	
 	}
 
 	.nav-fixed .logo {
