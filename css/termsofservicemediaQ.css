@@ -1,4 +1,15 @@
 
+@media (max-width: 500px){
+	.hopper-logo {
+		display: block !important;
+		width: 35% !important;
+		max-width: 35% !important;
+		height: 26px !important ;
+		max-height: 26px !important;
+	
+	}
+
+}
 @media (max-width: 750px) {
 	#article {
 		padding: 0 2rem !important;
@@ -81,8 +92,11 @@
 	}
 	.hopper-logo {
 		display: block;
-		width: 23%;
-		max-width: 23%;
+		width: 20% ;
+		max-width: 20%;
+		height: 39px;
+		max-height: 39px;
+
 	}
 	h1.header-text {
 		padding: 0;
