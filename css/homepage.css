@@ -846,12 +846,11 @@ svg {
 }
 #modal .close svg {
   fill: #878787;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   float: left;
   position: relative;
-  top: -1.5em;
-  left: -1em;
+  top: -2em;
 }
 
 #modal .help svg {
