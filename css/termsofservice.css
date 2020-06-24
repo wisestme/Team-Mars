@@ -38,7 +38,7 @@ li {
 	position: relative;
 }
 .container-fluid {
-	padding: 40px 90px 0 122px;
+	padding: 35px 90px 0 122px;
 }
 .nav {
 	margin-top: .5rem;
@@ -54,8 +54,10 @@ li {
 
 .flex-ul a {
 	color: #fff;
-	font-size: 15px;
+	font-size: 17px;
 	opacity: 0.9;
+	text-transform: uppercase;
+	margin-left: -12rem;
 }
 .flex-ul a:hover {
 	opacity: 1;
@@ -66,8 +68,15 @@ li {
 	border: solid 1px #fff;
 	padding: 10px 20px;
 }
+.border-link:hover{
+	background: #fff;
+	color: #333;
+}
 .header-back-btn {
 	list-style: none;
+}
+.header-back-btn span{
+	margin-left: 14px;
 }
 .header-back-btn a {
 	opacity: 0.8;
@@ -399,6 +408,12 @@ h1.heading {
   .selected {
     border-bottom: 2px solid #505050;
   }
+  .option a{
+	  color: #878787;
+	  font-size: 18px;
+	  font-weight: bold;
+  }
+
   .footer-large .language select {
     border: none;
     text-transform: uppercase;
