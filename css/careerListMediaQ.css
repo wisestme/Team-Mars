@@ -13,6 +13,14 @@
 		padding: 20px 0 20px 0 !important;
 		line-height: 40px;
 	}
+	.hopper-logo {
+		display: block !important;
+		width: 35% !important;
+		max-width: 35% !important;
+		height: 26px !important ;
+		max-height: 26px !important;
+
+	}
 }
 @media (max-width: 550px) {
 	/* desktop perks section */
@@ -188,8 +196,11 @@
 	}
 	.hopper-logo {
 		display: block;
-		width: 23%;
-		max-width: 23%;
+		width: 20% ;
+		max-width: 20%;
+		height: 39px;
+		max-height: 39px;
+
 	}
 	h1.header-text {
 		padding: 0 20px;
