@@ -36,14 +36,15 @@
 
 		  		<p class="center font-type2">Send a link to your phone, or download directly from <span class="red">hopper.com </span>on your device</p>
 
-		  		<form method="post" action="cta-modal-sent.html" target="_blank">
-		  		<input type="number" placeholder="Phone Number" class="input">
+		  		<form name="myForm" method="post" action="cta-modal-sent.html" target="_blank" onsubmit="return validateForm()">
+		  		<input type="number" placeholder="Phone Number" class="input" name="pnumber">
+		  		
 		  		<span><button type="submit" class="button">Send link</button></span>
 				</form>
 
 				<div class="images">
-					<img src="./images/appstore.png" class="appstore-img">
-					<img src="./images/playstore.png" class="playstore-img">
+					<a href="#"><img src="./images/appstore.png" class="appstore-img"></a>
+					<a href="#"><img src="./images/playstore.png" class="playstore-img"></a>
 				</div>
 
 				<p class="center send-text">By clicking “Send Link”, you agree to the<span><a href = '#'> Terms of Service </a></span></p>
@@ -54,9 +55,18 @@
 			<div class="col-sm-3"></div>
 		</div>
 		</div>
-		
-
 	</div>
+
+	<script>
+		function validateForm() {
+		var x = document.forms["myForm"]["pnumber"].value;
+			if (x == "") {
+				alert("Number must be filled out");
+				return false;
+			}
+		}
+	</script>
+
 
 </body>
 </html>
