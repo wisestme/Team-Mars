@@ -806,3 +806,87 @@ hr {
     width: 30.5%;
   }
 }
+
+
+/* Hamburger */
+/* Generals */
+.grid,
+.grid-large,
+.grid-large-temp {
+  display: grid;
+}
+
+.flex,
+.flex-small,
+.flex-large {
+  display: flex
+}
+
+.small-only {
+  display: none;
+}
+
+
+
+svg {
+  width: 30px;
+  height: 30px;
+}
+
+/* Modal */
+#modal {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: -110vh;
+  left: 0;
+  z-index: 10;
+  transition: 0.5s ease;
+}
+#modal .close svg {
+  fill: #878787;
+  width: 20px;
+  height: 20px;
+  float: left;
+  position: relative;
+  top: -1.5em;
+  left: -1em;
+}
+
+#modal .help svg {
+  fill: #878787;
+  width: 20px;
+  height: 20px;
+  float: right;
+  position: relative;
+  top: -1.5em;
+  
+}
+
+#modal .wrapper {
+  width: 100%;
+  background: #fff;
+  color: #fff;
+  padding: 3em;
+  height: 100vh;
+}
+#modal nav {
+  margin-top: 2em;
+}
+
+#modal nav ul {
+  flex-direction: column;
+  justify-content: center;
+}
+#modal li {
+  display: block;
+  list-style: none;
+  font-size: 1em;
+  margin: 1.5em 0;
+  text-align: center;
+}
+
+#modal .logo {
+  text-align: center;
+}
