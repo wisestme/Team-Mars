@@ -1048,6 +1048,11 @@ hr {
 		z-index: 4;
 	}
 
+	.people-menu svg {
+		position: relative;
+		left: 1.2em;
+	}
+
 	#modal .logo {
 		width: 100%;
 		text-align: center;
