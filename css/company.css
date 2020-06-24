@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* .top-container {
   width: 100%;
   max-width: 100%;
@@ -456,5 +462,108 @@ img {
 }
 .career-card {
   background: #F6F6F6;
+}
+
+/*   Footer    */
+
+.footer-large {
+  display: none;
+  padding-bottom: 2rem;
+}
+.footer-mobile {
+  display: flex;
+}
+.footer-container {
+  width: 100vw;
+  padding: 5%;
+}
+.footer-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-mobile-options,
+.footer-mobile .option-container,
+.footer-mobile .language,
+.footer-mobile .social,
+hr {
+  width: 100%;
+  color: #505050;
+  margin-bottom: 2rem;
+}
+
+.footer-mobile .hooper,
+.footer-mobile .company,
+.footer-mobile .people,
+.footer-mobile .support,
+.footer-mobile .media,
+.footer-mobile .social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #878787;
+}
+.footer-mobile .company div {
+  display: flex;
+  align-items: center;
+}
+.footer-mobile .plus-btn {
+  font-weight: 900;
+  padding: 0 0.3rem;
+  transition: 0.5s;
+}
+.footer-mobile .plus-btn:hover {
+  cursor: pointer;
+  color: #fa6866;
+}
+
+.footer-mobile .company .notification {
+  font-size: 0.7rem;
+  background-color: #fa6866;
+  padding: 0 0.5rem;
+  border-radius: 8px;
+  color: #fff;
+  margin-left: 1rem;
+}
+
+.footer-mobile .social {
+  border-bottom: none;
+  margin-bottom: 2rem;
+}
+.footer-mobile .language select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.footer-mobile .terms {
+  text-align: center;
+  border-bottom: 1px solid #505050;
+  margin-bottom: 2rem;
+  align-self: center;
+}
+.footer-mobile .footer-bottom {
+  align-self: center;
+  margin: -1rem 0 1rem;
+  color: #aaa;
+  font-size: 12px;
+}
+
+.footer-mobile hr {
+  color: #505050;
+}
+.footer-mobile .option-container .hide {
+  display: none;
+}
+.footer-mobile .option-container a {
+  display: block;
+  margin: 0.3rem 0 0.3rem 0.3rem;
+  color: #aaa;
+}
+.footer-mobile .option-container a:active {
+  color: #fa6866;
 }
 

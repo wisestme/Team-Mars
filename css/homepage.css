@@ -26,7 +26,7 @@ body {
 }
 
 .landingpage-background {
-  background-image: url(../images/landingpage/Landscape-Mobile-min.png);
+  background-image: url(https://res.cloudinary.com/dw4rdnuqh/image/upload/v1593029037/Team-Mars/Landscape-Mobile-min_aw3zbh.png);
   background-size: cover;
   background-position: 5% 50%, 84% 500%;
   background-repeat: no-repeat;
@@ -186,7 +186,7 @@ body {
 /* SECTION IV */
 
 .sectioniv {
-  background: url(../images/sectioniv/sectioniv-bg.jpg);
+  background: url(https://res.cloudinary.com/dw4rdnuqh/image/upload/v1593029080/Team-Mars/sectioniv-bg_pcj74e.jpg);
   background-repeat: no-repeat;
   background-size: 120%;
   background-position: bottom;
@@ -376,8 +376,8 @@ hr {
   }
 
   .landingpage-background {
-    background-image: url(../images/landingpage/Plane.png),
-      url(../images/landingpage/background.png);
+    background-image: url(https://res.cloudinary.com/dw4rdnuqh/image/upload/v1593029037/Team-Mars/Plane_s9illx.png),
+      url(https://res.cloudinary.com/dw4rdnuqh/image/upload/v1593029045/Team-Mars/background_mt0cqg.png);
     background-size: 30%, 220%;
     background-position: 90% 55%, 88% 50%;
     background-repeat: no-repeat;
@@ -482,7 +482,7 @@ hr {
 
   /* SECTION IV */
   .sectioniv {
-    background: url(../images/sectioniv/desk.png);
+    background: url(https://res.cloudinary.com/dw4rdnuqh/image/upload/v1593029061/Team-Mars/desk_vjlfdd.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -542,9 +542,9 @@ hr {
     padding-bottom: 0.5rem;
     z-index: 2;
   }
-  .footer-large-first .option-title {
-    /* border-bottom: 1px solid #f6f6f6; */
-  }
+  /* .footer-large-first .option-title {
+    border-bottom: 1px solid #f6f6f6;
+  } */
   .footer-large .right {
     width: 65%;
   }
@@ -614,8 +614,8 @@ hr {
     height: 100vh;
   }
   .landingpage-background {
-    background-image: url(../images/landingpage/Plane.png),
-      url(../images/landingpage/background@3x.png);
+    background-image: url(https://res.cloudinary.com/dw4rdnuqh/image/upload/v1593029037/Team-Mars/Plane_s9illx.png),
+      url(https://res.cloudinary.com/dw4rdnuqh/image/upload/v1593029051/Team-Mars/background_3x_d7mfut.png);
     background-size: 15%, 120% 135%;
     background-position: 65% center, 70% 60%;
     height: 100%;
