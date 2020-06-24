@@ -26,12 +26,10 @@ body {
 }
 
 .landingpage-background {
-  background-image: url(../images/landingpage/Plane.png),
-    url(../images/landingpage/background.png);
-  background-size: 30%, cover;
+  background-image: url(../images/landingpage/Landscape-Mobile-min.png);
+  background-size: cover;
   background-position: 5% 50%, 84% 500%;
   background-repeat: no-repeat;
-  height: 55vh;
 }
 
 .container {
@@ -43,9 +41,14 @@ body {
 }
 .landingpage-title {
   font-size: 22px;
+  color: #fff;
 }
 .landingpage-description {
   font-size: 14px;
+}
+
+.landingpage-content .description {
+  color: #fff;
 }
 
 .description {
@@ -55,6 +58,7 @@ body {
   text-align: center;
   font-size: 20px;
 }
+
 .landingpage-top,
 .sub-nav {
   display: flex;
@@ -74,7 +78,7 @@ body {
 }
 .sub-nav {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 0;
+  padding: 2%;
   background: #fff;
 }
 
@@ -111,10 +115,6 @@ body {
 .title {
   margin-top: 3rem;
 }
-/* .sectionii-description,
-.sectioniii-description {
-  font-size: 14px;
-} */
 
 .pre {
   display: none;
@@ -126,7 +126,6 @@ body {
 
 .sectionii-bottom-images {
   width: 100%;
-  /* height: 70%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -379,7 +378,7 @@ hr {
   .landingpage-background {
     background-image: url(../images/landingpage/Plane.png),
       url(../images/landingpage/background.png);
-    background-size: 30%, 190%;
+    background-size: 30%, 220%;
     background-position: 90% 55%, 88% 50%;
     background-repeat: no-repeat;
     height: 100vh;
@@ -391,6 +390,10 @@ hr {
     z-index: 9;
     position: fixed;
   }
+
+  .sub-nav {
+    padding: 0.5% 8%;
+  }
   .landingpage-description {
     text-align: center;
   }
@@ -398,18 +401,20 @@ hr {
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
   }
-  .landingpage .title {
+  .landingpage-title {
     text-align: center;
     margin-top: 0;
+    color: #000;
   }
   .description {
     width: 64%;
     text-align: left;
   }
-  .landingpage .description {
+  .landingpage-content .description {
     font-size: 14px;
     text-align: center;
     width: auto;
+    color: #878787;
   }
   .nav-btns,
   .appleicon {
@@ -677,6 +682,8 @@ hr {
     padding: 0.5rem 1rem;
     border-radius: 5px;
     color: #fff;
+    display: flex;
+    align-items: center;
   }
   .sendapp-btn:hover {
     cursor: pointer;
@@ -689,6 +696,9 @@ hr {
     margin-top: 8px;
     box-shadow: none;
   }
+  .sendapp-btn img {
+    margin-left: 0.5rem;
+  }
   .landingpage-content {
     align-self: flex-start;
     align-items: flex-start;
@@ -700,7 +710,9 @@ hr {
   }
   .landingpage-title {
     font-size: 2.5rem;
+    text-align: left;
   }
+
   .landingpage-description {
     width: 100%;
   }
