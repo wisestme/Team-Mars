@@ -634,7 +634,7 @@ hr {
 }
 
 .menu-head div:first-child > img {
-  margin: 0.9em 0.2em;
+  margin: 0.2em 0.2em;
 }
 
 
@@ -838,7 +838,7 @@ border-radius: 8px
 
 
 @media screen and (min-width: 870px) {
-  .quick-links .small-only {
+  #footer .fas {
     display: none;
   }
 }
