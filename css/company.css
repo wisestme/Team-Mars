@@ -510,6 +510,7 @@ svg {
 footer {
   padding: 1em;
   position: relative;
+  margin-top: 4em;
 }
 
 footer > .wrapper {
@@ -529,7 +530,7 @@ footer > div > img {
   width: 40%;
   text-align: center;
   position: relative;
-  bottom: 1.5em;
+  bottom: 0.8em;
 }
 
 footer > div > img {
@@ -607,11 +608,18 @@ footer .fas {
   text-decoration: none;
 }
 
+.line {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  opacity: 0.3;
+}
+
 hr {
   position: absolute;
   top: 4.5em;
-  width: 88vw;
-  text-align: center;
+  width: 87vw;
+  left: 3em;
 }
 
 .menu-head div:first-child {  
