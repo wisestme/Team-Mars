@@ -6,12 +6,12 @@
 /* Import Font*/
 @font-face {
 	font-family: proximaNova;
-	src: url(/fonts/ProximaNova.otf);
+	src: url(../fonts/ProximaNova.otf);
 }
 
 @font-face {
 	font-family: MetaSerifPro;
-	src: url(/fonts/SourceSerifPro.otf);
+	src: url(../fonts/SourceSerifPro.otf);
 }
 
 .top-section {
