@@ -128,7 +128,7 @@ nav a {
 
 main .wrapper {
 	padding-top: 2em;
-	background-image: url(../images/wave.png);
+	background-image: url(https://res.cloudinary.com/dw4rdnuqh/image/upload/v1593029069/Team-Mars/wave_dgftyx.png);
 	background-size: cover;
 	background-position: center;
 }
@@ -526,7 +526,7 @@ video {
 }
 
 .humans-quote {
-	background-image: url(../images/faces.png);
+	background-image: url(https://res.cloudinary.com/dw4rdnuqh/image/upload/v1593029015/Team-Mars/faces_f7xzqj.png);
 	margin: 6em auto;
 	background-size: cover;
 	background-position: center;
@@ -1337,7 +1337,7 @@ hr {
 	}
 
 	#humans .quote {
-		background-image: url(../images/faces.png);
+		background-image: url(https://res.cloudinary.com/dw4rdnuqh/image/upload/v1593029015/Team-Mars/faces_f7xzqj.png);
 		background-size: cover;
 		background-position: center;
 		position: relative;
@@ -1538,10 +1538,10 @@ hr {
 		position: absolute;
 	}
 
-	footer .fa-window-close {
+	/* footer .fa-window-close {
 		
-		/*display: none;*/
-	}
+		display: none;
+	} */
 
 	#footer .select {
 		width: 100%;
@@ -1560,9 +1560,9 @@ border-radius: 8px
 		width: 100%;
 	}
 
-	.footer-left {
+	/* .footer-left {
 	
-	}
+	} */
 	footer > div:first-child {
 		display: flex;
 		justify-content: center;

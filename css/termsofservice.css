@@ -67,6 +67,7 @@ li {
 	border-radius: 8px;
 	border: solid 1px #fff;
 	padding: 10px 20px;
+	text-transform: none !important;
 }
 .border-link:hover{
 	background: #fff;
