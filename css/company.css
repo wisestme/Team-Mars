@@ -92,7 +92,30 @@
   border-radius: 0.5rem;
   background: #ffffff;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+
 }
+
+.browse-div a {
+  font-family: proximaNova;
+font-size: 14px;
+line-height: 20px;
+display: flex;
+text-align: center;
+text-decoration: none;
+border-radius: 8px;
+color: #333;
+box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+width: 100%;
+padding: 0.7em 5px 0.7em 50px;
+max-width: 250px
+}
+
+.browse-div span {
+  margin-left: 5em;
+  border-left: 1px solid rgba(0, 0, 0, 0.3);;
+  padding-left: 1em;
+}
+
 .browse-career {
   margin-left: 4rem;
 }
@@ -458,3 +481,142 @@ img {
   background: #F6F6F6;
 }
 
+/* Target footer */
+/* Generals */
+.grid,
+.grid-large,
+.grid-large-temp {
+  display: grid;
+}
+
+.flex,
+.flex-small,
+.flex-large {
+  display: flex
+}
+
+.small-only {
+  display: none;
+}
+
+
+
+svg {
+  width: 30px;
+  height: 30px;
+}
+
+/* Footer */
+footer {
+  padding: 1em;
+  position: relative;
+}
+
+footer > .wrapper {
+  justify-content: space-between;
+  padding: 2em;
+  height: 35vh;
+}
+
+.footer-left {
+  width: 30%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-left img,
+footer > div > img {
+  width: 40%;
+  text-align: center;
+  position: relative;
+  bottom: 1.5em;
+}
+
+footer > div > img {
+  width: 25%;
+}
+
+.footer-left div:nth-child(2) {
+  position: relative;
+  bottom: 1.8em;
+  width: 50%;
+  justify-content: space-between;
+}
+
+footer select {
+  width: 80%;
+  font-weight: bold;
+}
+
+footer .social {
+  justify-content: space-between;
+}
+
+.footer-right {
+  width: 65%;
+}
+
+footer .quick-links {
+  justify-content: space-around;
+  height: 80%;
+
+}
+
+.quick-links > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.quick-links > div > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+footer .fas {
+  display: none;
+}
+
+.footer-right li {
+  list-style: none;
+}
+
+.footer-right h2 {
+  font-family: proximaNova;
+  font-size: 14px;
+  line-height: 16px;
+  color: #878787;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.4em;
+  transition: 0.25s ease;
+  text-align: center;
+}
+
+.footer-right h2:hover {
+  border-bottom: 2px solid #505050;
+}
+
+.footer-right a {
+  font-family: proximaNova;
+  font-size: 12px;
+  line-height: 14px;
+  color: #878787;
+}
+
+hr {
+  position: absolute;
+  top: 4.5em;
+  width: 88vw;
+  text-align: center;
+}
+
+.menu-head div:first-child {  
+  align-items: flex-start;
+}
+
+.menu-head div:first-child > img {
+  margin: 0.2em;
+}

@@ -1651,3 +1651,28 @@ border-radius: 8px
 		display: none;
 	}
 }
+
+/* Target footer */
+/* Generals */
+.grid,
+.grid-large,
+.grid-large-temp {
+	display: grid;
+}
+
+.flex,
+.flex-small,
+.flex-large {
+	display: flex
+}
+
+.small-only {
+	display: none;
+}
+
+
+
+svg {
+	width: 30px;
+	height: 30px;
+}
