@@ -3,9 +3,11 @@
 // Get the plus icons
 var expandButtons = document.querySelectorAll('.open-close');
 var plusIcons = document.querySelectorAll('.fa-plus');
+console.log(plusIcons);
 
 // Get the close icons
 var closeButtons = document.querySelectorAll('.fa-window-close');
+console.log(closeButtons);
 
 
 // Get the footer menu
@@ -51,6 +53,7 @@ function showPlusIcons() {
 			plusIcon.classList.add('show');
 			plusIcon.classList.remove('hide');
 		}
+
 }
 // Hide close icons
 function hideCloseButton() {
@@ -58,6 +61,7 @@ function hideCloseButton() {
 	closeButton.classList.add('hide');
 	closeButton.classList.remove('show');
 }
+	
 }
 
 hideCloseButton()
@@ -67,7 +71,7 @@ for (plusIcon of plusIcons) {
 	plusIcon.addEventListener('click', function() {
 		// hide all the expand buttons
 		hidePlusIcons();
-
+		console.log('plusIcons');
 		
 		//get the hidden menu items of the clicked portion
 		var menuList = this.parentNode.parentNode.parentNode.childNodes[3].children;

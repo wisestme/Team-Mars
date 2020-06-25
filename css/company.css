@@ -584,9 +584,9 @@ footer .quick-links {
   height: 100%;
 }
 
-footer .fas {
+/*footer .fas {
   display: none;
-}
+}*/
 
 .footer-right li {
   list-style: none;
@@ -689,8 +689,7 @@ footer .wrapper {
 
   #footer .footer-right ul {
     position: absolute;
-    top: 6em;
-    left: -2.5em;
+    top: 6.5em;
     width: 100%;
   }
 
@@ -720,14 +719,19 @@ footer .wrapper {
     display: inline;
     float: right;
     position: absolute;
-    right: 2em;
-    z-index: 20;
+    right: 0.2em;
+
   }
 
-  footer .fa-window-close {
+  /*footer .fa-plus {
+    z-index: 12;
     
-    /*display: none;*/
   }
+
+   footer .fa-window-close {
+    z-index: 11;
+    
+  }*/
 
   #footer .select {
     width: 100%;
@@ -811,13 +815,14 @@ border-radius: 8px
   /*display: none;*/
   opacity: 0;
   transition: 0.5s ease;
+  z-index: 0;
 }
 
 .show {
   /*display: block;*/
   opacity: 1;
   transition: 1s ease;
-  z-index: 2;
+  z-index: 12;
 }
   /*#careers::after {
     content: "";
