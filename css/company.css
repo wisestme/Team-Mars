@@ -604,6 +604,7 @@ footer .fas {
   font-size: 12px;
   line-height: 14px;
   color: #878787;
+  text-decoration: none;
 }
 
 hr {
@@ -618,5 +619,5 @@ hr {
 }
 
 .menu-head div:first-child > img {
-  margin: 0.2em;
+  margin: 0.9em 0.2em;
 }
