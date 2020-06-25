@@ -677,7 +677,7 @@ footer .wrapper {
 
   .open-close {
     display: block;
-    
+    z-index: 10;
   }
 
   #footer .footer-right ul {
@@ -713,6 +713,8 @@ footer .wrapper {
     display: inline;
     float: right;
     position: absolute;
+    right: 2em;
+    z-index: 20;
   }
 
   footer .fa-window-close {
